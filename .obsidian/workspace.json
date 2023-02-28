@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Estructuras de datos/AVLs.md",
+                "file": "Estructuras de datos/01 - AVLs.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,18 +25,6 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Estructuras de datos/Estructura de datos.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "dbadc5840f4ce479",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
                 "file": "Ordenes - The Big O.md",
                 "mode": "source",
                 "source": false
@@ -44,7 +32,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -129,17 +117,17 @@
       "markdown-importer:Open format converter": false
     }
   },
-  "active": "dbadc5840f4ce479",
+  "active": "b1846114620adbd6",
   "lastOpenFiles": [
-    "Estructuras de datos/Estructura de datos.md",
-    "Estructuras de datos/AVLs.md",
-    "resources/img/bigo.png",
+    "Estructuras de datos/01 - AVLs.md",
+    "Estructuras de datos/00 - Estructura de datos.md",
+    "Untitled.canvas",
     "Ordenes - The Big O.md",
+    "resources/img/bigo.png",
     "resources/img",
     "resources",
     "TADs",
     "Estructuras de datos",
-    "Untitled.canvas",
     "images.jpeg"
   ]
 }
