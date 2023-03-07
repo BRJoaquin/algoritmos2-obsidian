@@ -6,7 +6,7 @@ La notación Big O describe el comportamiento asintótico del tiempo de ejecuci�
 
 - O(1): Tiempo constante. El tiempo de ejecución del algoritmo no depende del tamaño de la entrada. Un ejemplo de algoritmo con orden O(1) es el siguiente:
   
-```c++
+```cpp
 int sum(int a, int b) {
     return a + b;
 }
@@ -14,7 +14,7 @@ int sum(int a, int b) {
 
 - O(log n): Tiempo logarítmico. El tiempo de ejecución del algoritmo crece de manera proporcional al logaritmo del tamaño de la entrada. Un ejemplo de algoritmo con orden O(log n) es la búsqueda binaria:
 
-```c++
+```cpp
 int binarySearch(int arr[], int l, int r, int x) {
     while (l <= r) {
         int m = l + (r-l)/2;
@@ -31,7 +31,7 @@ int binarySearch(int arr[], int l, int r, int x) {
 
 - O(n): Tiempo lineal. El tiempo de ejecución del algoritmo crece de manera proporcional al tamaño de la entrada. Un ejemplo de algoritmo con orden O(n) es la suma de los elementos de un arreglo: 
   
-```c++
+```cpp
 int sumArray(int arr[], int n) {
     int sum = 0;
     for (int i = 0; i < n; i++) {
@@ -43,7 +43,7 @@ int sumArray(int arr[], int n) {
 
 - O(n log n): Tiempo log-lineal. El tiempo de ejecución del algoritmo crece de manera proporcional al tamaño de la entrada multiplicado por su logaritmo. Un ejemplo de algoritmo con orden O(n log n) es el algoritmo de ordenamiento QuickSort:
   
-```c++
+```cpp
 void quickSort(int arr[], int low, int high) {
     if (low < high) {
         int pi = partition(arr, low, high);
@@ -68,7 +68,7 @@ int partition(int arr[], int low, int high) {
 
 - O(n^2): Tiempo cuadrático. El tiempo de ejecución del algoritmo crece de manera proporcional al cuadrado del tamaño de la entrada. Un ejemplo de algoritmo con orden O(n^2) es el algoritmo de ordenamiento por selección:
   
-```c++
+```cpp
 void selectionSort(int arr[], int n) {
     for (int i = 0; i < n-1; i++) {
         int min_idx = i;
@@ -82,7 +82,7 @@ void selectionSort(int arr[], int n) {
 
 - O(2^n): Tiempo exponencial. El tiempo de ejecución del algoritmo crece de manera exponencial con el tamaño de la entrada. Un ejemplo de algoritmo con orden O(2^n) es el problema de la mochila, que busca encontrar la combinación óptima de elementos para llenar una mochila con una capacidad dada. El algoritmo de fuerza bruta para este problema tiene un orden temporal de O(2^n), ya que debe generar todas las posibles combinaciones de elementos para encontrar la solución óptima.
   
-```c++
+```cpp
 #include <iostream>
 using namespace std;
 
