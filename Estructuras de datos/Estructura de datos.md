@@ -2,7 +2,7 @@ Las estructuras de datos son formas organizadas de almacenar y gestionar datos e
 
 Existen muchas estructuras de datos diferentes, cada una de las cuales tiene sus propias características y beneficios. Algunos ejemplos comunes incluyen:
 
-- **Arreglo/Array**: una estructura de datos que almacena una colección de elementos del mismo tipo, dispuestos en una secuencia lineal. Estos arreglos pueden tener multiples dimensiones, a un array de dos dimensiones le llamos matriz.
+- **Arreglo/Array**: una estructura de datos que almacena una colección de elementos del mismo tipo, dispuestos en una secuencia lineal. Estos arreglos pueden tener múltiples dimensiones, a un array de dos dimensiones le llamos matriz.
   
 - **Lista encadenada/enlazada (simple o doble)**: una estructura de datos en la que cada elemento de la lista contiene un puntero al siguiente elemento, formando una cadena enlazada. En el caso de ser doblemente encadenada
   

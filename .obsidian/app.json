@@ -1,4 +1,10 @@
 {
   "legacyEditor": false,
-  "livePreview": true
+  "livePreview": true,
+  "alwaysUpdateLinks": true,
+  "attachmentFolderPath": "resources",
+  "spellcheck": true,
+  "spellcheckLanguages": [
+    "es-AR"
+  ]
 }

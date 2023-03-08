@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Ordenes - The Big O.md",
-                "mode": "preview",
+                "file": "Index.md",
+                "mode": "source",
                 "source": false
               }
             }
@@ -38,7 +38,7 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "byCreatedTime"
               }
             }
           },
@@ -77,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Ordenes - The Big O.md",
+                "file": "Index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,13 +107,15 @@
   },
   "active": "b11a2e34c896bc90",
   "lastOpenFiles": [
-    "Estructuras de datos/01 - AVLs.md",
-    "Estructuras de datos/00 - Estructura de datos.md",
     "Ordenes - The Big O.md",
+    "Estructuras de datos/Estructura de datos.md",
+    "Estructuras de datos/AVLs.md",
+    "resources/img/bigo.png",
+    "Index.md",
     "publish.css",
     "theme.css",
     "Untitled.canvas",
-    "resources/img/bigo.png",
+    "Untitled.canvas",
     "resources/img",
     "resources",
     "TADs",
