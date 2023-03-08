@@ -20,15 +20,16 @@ Con este libro, los lectores podrán adquirir una comprensión sólida y complet
 
 # Sobre la autoridad del contenido
 
-> El 80% de este contenido esta generado mediante IA.
+> La mayoría de este contenido esta generado mediante IA.
 
-Es una realidad, hoy día es posible el ahorro de tiempo y no quiero tener crédito por algo que no esta escrito por mi. Sin embargo mi aporte es:
+Es una realidad, hoy día es posible el ahorro de tiempo y no quiero tener crédito por algo que no esta escrito por mi. Sin embargo aun los generadores de texto necesitan supervision, es por tanto mi trabajo:
 
-- Revisar todo el contenido que sale como output (corregir de vez en cuando).
-- Guiar en los temario y su profundidad.
-- Buscar ejemplos que lo conecten con las clases.
+1. Revisar todo el contenido que sale como output (corregir de vez en cuando).
+2. Guiar en los temario y su profundidad.
+3. Buscar ejemplos que lo conecten con las clases.
 
 # Sobre el autor
+
 
 Me llamo Joaquin Vigna, y soy un apasionado de la tecnología y el software. Me encanta crear soluciones innovadoras y efectivas para problemas complejos, y siempre estoy buscando nuevas formas de mejorar y aprender.
 
@@ -38,4 +39,9 @@ Además de mi trabajo en la empresa, también disfruto enseñar y compartir mi c
 
 Creo que el open-source es fundamental para el futuro de la tecnología, y estoy comprometido a hacer mi parte para apoyarlo. Me apasiona la idea de compartir conocimientos y tecnologías libremente, y siempre estoy buscando formas de contribuir y colaborar con otros en la comunidad.
 
+![[35345672.jpeg|120]]
 Github: https://github.com/BRJoaquin 
+
+# Temario
+
+Se puede ver el [temario en este enlace](Temario)

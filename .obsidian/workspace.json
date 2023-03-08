@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "334df12a5a6f0312",
+        "id": "0981468fbf96767d",
         "type": "tabs",
         "children": [
           {
-            "id": "b11a2e34c896bc90",
+            "id": "e11c0e252e5a1e7a",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -38,7 +38,7 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "byCreatedTime"
+                "sortOrder": "alphabetical"
               }
             }
           },
@@ -105,21 +105,47 @@
       "publish:Publish changes": false
     }
   },
-  "active": "b11a2e34c896bc90",
+  "active": "e11c0e252e5a1e7a",
   "lastOpenFiles": [
     "Ordenes - The Big O.md",
-    "Estructuras de datos/Estructura de datos.md",
-    "Estructuras de datos/AVLs.md",
-    "resources/img/bigo.png",
+    "resources/img/35345672.jpeg",
+    "Estructuras de datos/Lista doblemente encadenada.md",
+    "Temario.md",
+    "Estructuras de datos/Lista simplemente encadenada.md",
+    "TADs/TAD.md",
     "Index.md",
+    "TADs/Lista.md",
+    "Estructuras de datos/Estructura de datos.md",
+    "TADs/Tabla.md",
+    "Tacticas/Tacticas.md",
+    "Algoritmos sobre grafos/Recorridas/Recorridas.md",
+    "Algoritmos sobre grafos/Camino mas corto/Camino mas corto.md",
+    "Algoritmos sobre grafos/Arbol de cubrimiento minimo/Arbol de cubrimiento minimo.md",
+    "TADs/Cola.md",
+    "TADs/Set.md",
+    "Estructuras de datos/ABB.md",
+    "Estructuras de datos/AVLs.md",
+    "Algoritmos sobre grafos/Recorridas/BFS.md",
+    "Algoritmos sobre grafos/Recorridas/DFS.md",
+    "Estructuras de datos/MFset.md",
+    "Tacticas/Dividir y conquistar.md",
+    "Tacticas/Greedy.md",
+    "Tacticas/Programacion dinamica.md",
+    "Algoritmos sobre grafos/Orden topologico.md",
+    "TADs/Pila.md",
+    "Algoritmos sobre grafos/Recorridas",
+    "Algoritmos sobre grafos/Arbol de cubrimiento minimo",
+    "Algoritmos sobre grafos/Camino mas corto",
+    "Tacticas",
+    "Algoritmos sobre grafos",
+    "Lista encadenada",
+    "resources/img/bigo.png",
     "publish.css",
     "theme.css",
     "Untitled.canvas",
     "Untitled.canvas",
     "resources/img",
     "resources",
-    "TADs",
-    "Estructuras de datos",
     "images.jpeg"
   ]
 }

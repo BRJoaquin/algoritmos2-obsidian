@@ -5,7 +5,6 @@ El orden temporal de un algoritmo se refiere a la cantidad de tiempo que tarda u
 La notación Big O describe el comportamiento asintótico del tiempo de ejecución del algoritmo en el peor de los casos. Algunos de los órdenes temporales más comunes son:
 
 - O(1): Tiempo constante. El tiempo de ejecución del algoritmo no depende del tamaño de la entrada. Un ejemplo de algoritmo con orden O(1) es el siguiente:
-  
 ```cpp
 int sum(int a, int b) {
     return a + b;
@@ -132,3 +131,8 @@ El orden espacial de un algoritmo se refiere a la cantidad de memoria adicional 
 El orden espacial de un algoritmo puede ser muy importante en situaciones en las que la memoria es limitada o costosa, como en sistemas embebidos o en dispositivos móviles. Algunos algoritmos tienen un orden espacial constante, es decir, utilizan una cantidad fija de memoria, independientemente del tamaño de la entrada. Otros algoritmos tienen un orden espacial variable, que depende del tamaño de la entrada.
 
 Es importante tener en cuenta tanto el orden temporal como el orden espacial de un algoritmo al seleccionar la mejor solución para un problema determinado. A menudo, hay un compromiso entre la eficiencia temporal y espacial de un algoritmo, y es importante encontrar el equilibrio adecuado entre ambos para lograr el mejor rendimiento general.
+
+# Mas informacion
+
+- https://www.geeksforgeeks.org/understanding-time-complexity-simple-examples/
+- https://www.freecodecamp.org/news/big-o-cheat-sheet-time-complexity-chart/
