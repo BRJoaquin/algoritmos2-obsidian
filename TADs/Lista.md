@@ -1,6 +1,6 @@
 # Intro
 
-Una lista es un tipo abstracto de datos ([[TAD]]) que se utiliza para modelar una estructura linealmente ordenada de elementos, donde se define una interfaz abstracta que especifica las operaciones permitidas y sus restricciones. Las operaciones más comunes incluyen la inserción, eliminación y acceso a elementos individuales en una lista.
+Una lista es un tipo abstracto de datos ([[Tipo Abstracto de Dato (TAD)]]) que se utiliza para modelar una estructura linealmente ordenada de elementos, donde se define una interfaz abstracta que especifica las operaciones permitidas y sus restricciones. Las operaciones más comunes incluyen la inserción, eliminación y acceso a elementos individuales en una lista.
 
 # Definicion de operaciones
 

@@ -10,15 +10,15 @@
 3) [[Tabla de hash]]
 4) Grafo
 	- [[Grafo]] (TAD)
-	- [[Recorridas]]
+	-  [[Grafo#Recorridas]]
 		- [[BFS]]
 		- [[DFS]]
 	- [[Orden topologico]]
-	- [[Camino mas corto]]
+	-  [[Grafo#Camino mas corto]]
 		- [[Dijkstra]]
 		- [[Bellman-Ford]]
 		- [[Floyd]]
-	- [[Arbol de cubrimiento minimo]]
+	- [[Grafo#Arbol de cubrimiento minimo]]
 		- [[Prim]]
 		- [[Kruskal]]
 5) [[Tacticas]]
