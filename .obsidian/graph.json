@@ -1,30 +1,37 @@
 {
   "collapse-filter": false,
   "search": "",
-  "showTags": true,
+  "showTags": false,
   "showAttachments": false,
   "hideUnresolved": false,
   "showOrphans": true,
   "collapse-color-groups": false,
   "colorGroups": [
     {
-      "query": "",
+      "query": "tag:#estructura_de_datos",
       "color": {
         "a": 1,
         "rgb": 14701138
       }
+    },
+    {
+      "query": "tag:#algoritmo",
+      "color": {
+        "a": 1,
+        "rgb": 14725458
+      }
     }
   ],
   "collapse-display": false,
-  "showArrow": false,
-  "textFadeMultiplier": 0,
+  "showArrow": true,
+  "textFadeMultiplier": -0.1,
   "nodeSizeMultiplier": 1,
   "lineSizeMultiplier": 1,
   "collapse-forces": false,
-  "centerStrength": 0.518713248970312,
-  "repelStrength": 10,
+  "centerStrength": 0.541666666666667,
+  "repelStrength": 10.625,
   "linkStrength": 1,
-  "linkDistance": 250,
+  "linkDistance": 179,
   "scale": 1,
   "close": true
 }

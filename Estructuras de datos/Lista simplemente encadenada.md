@@ -1,4 +1,6 @@
-
+---
+tag: estructura_de_datos
+---
 # Intro
 
 Una lista simplemente enlazada es una [[Estructura de datos]] lineal en la que cada elemento, llamado nodo, está compuesto por un valor y un puntero que apunta al siguiente nodo en la lista. El primer nodo se llama cabeza o inicio de la lista, y el último nodo apunta a NULL.

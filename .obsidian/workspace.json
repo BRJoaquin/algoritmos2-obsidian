@@ -20,8 +20,17 @@
               },
               "pinned": true
             }
+          },
+          {
+            "id": "35d72195803612eb",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -79,7 +88,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Estructuras de datos/Lista simplemente encadenada.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,34 +115,34 @@
       "publish:Publish changes": false
     }
   },
-  "active": "f76055dfc5d0061d",
+  "active": "35d72195803612eb",
   "lastOpenFiles": [
-    "Estructuras de datos/Lista doblemente encadenada.md",
+    "Algoritmos sobre grafos/Orden topologico.md",
+    "Algoritmos sobre grafos/Recorridas/DFS.md",
+    "Algoritmos sobre grafos/Recorridas/BFS.md",
+    "Algoritmos sobre grafos/Camino mas corto/Floyd.md",
+    "Algoritmos sobre grafos/Camino mas corto/Dijkstra.md",
+    "Algoritmos sobre grafos/Camino mas corto/Bellman-Ford.md",
+    "Algoritmos sobre grafos/Arbol de cubrimiento minimo/Prim.md",
+    "Algoritmos sobre grafos/Arbol de cubrimiento minimo/Kruskal.md",
+    "Estructuras de datos/ABB.md",
+    "Estructuras de datos/Lista simplemente encadenada.md",
     "TADs/Lista.md",
+    "TADs/Tabla.md",
+    "Estructuras de datos/Tabla de hash.md",
+    "Estructuras de datos/Multiestructuras.md",
+    "Estructuras de datos/MFset.md",
+    "Estructuras de datos/Lista doblemente encadenada.md",
+    "Estructuras de datos/Heap.md",
+    "Estructuras de datos/AVLs.md",
     "TADs/Pila.md",
     "TADs/Cola de prioridad.md",
     "TADs/Grafo.md",
-    "Estructuras de datos/Lista simplemente encadenada.md",
     "Tipo Abstracto de Dato (TAD).md",
     "index.md",
-    "Estructuras de datos/AVLs.md",
     "Temario.md",
     "Algoritmos sobre grafos/Arbol de cubrimiento minimo.md",
     "Tacticas/Programacion dinamica.md",
-    "Tacticas.md",
-    "Tacticas/Greedy.md",
-    "Tacticas/Dividir y conquistar.md",
-    "Tacticas/Backtracking.md",
-    "TADs/Cola.md",
-    "TADs/Tabla.md",
-    "Estructura de datos.md",
-    "Tacticas/~index.md",
-    "Algoritmos sobre grafos/Recorridas/~index.md",
-    "Algoritmos sobre grafos/Camino mas corto/~index.md",
-    "Algoritmos sobre grafos/Arbol de cubrimiento minimo/~index.md",
-    "Algoritmos sobre grafos/Arbol de cubrimiento minimo/Kruskal.md",
-    "Ordenes - The Big O.md",
-    "Algoritmos.md",
     "resources/img/35345672.jpeg",
     "Algoritmos sobre grafos/Recorridas",
     "Algoritmos sobre grafos/Arbol de cubrimiento minimo",
