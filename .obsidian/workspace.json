@@ -10,13 +10,15 @@
           {
             "id": "f76055dfc5d0061d",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Temario.md",
+                "file": "Estructuras de datos/Lista simplemente encadenada.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "pinned": true
             }
           }
         ]
@@ -77,7 +79,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Temario.md",
+                "file": "Estructuras de datos/Lista simplemente encadenada.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,9 +109,16 @@
   },
   "active": "f76055dfc5d0061d",
   "lastOpenFiles": [
+    "Estructuras de datos/Lista doblemente encadenada.md",
+    "TADs/Lista.md",
+    "TADs/Pila.md",
+    "TADs/Cola de prioridad.md",
     "TADs/Grafo.md",
-    "Temario.md",
+    "Estructuras de datos/Lista simplemente encadenada.md",
+    "Tipo Abstracto de Dato (TAD).md",
     "index.md",
+    "Estructuras de datos/AVLs.md",
+    "Temario.md",
     "Algoritmos sobre grafos/Arbol de cubrimiento minimo.md",
     "Tacticas/Programacion dinamica.md",
     "Tacticas.md",
@@ -117,7 +126,6 @@
     "Tacticas/Dividir y conquistar.md",
     "Tacticas/Backtracking.md",
     "TADs/Cola.md",
-    "Tipo Abstracto de Dato (TAD).md",
     "TADs/Tabla.md",
     "Estructura de datos.md",
     "Tacticas/~index.md",
@@ -127,13 +135,7 @@
     "Algoritmos sobre grafos/Arbol de cubrimiento minimo/Kruskal.md",
     "Ordenes - The Big O.md",
     "Algoritmos.md",
-    ",Algoritmos.md",
-    "TADs/Pila.md",
     "resources/img/35345672.jpeg",
-    "Estructuras de datos/Lista doblemente encadenada.md",
-    "Estructuras de datos/Lista simplemente encadenada.md",
-    "TADs/Lista.md",
-    "TADs/Set.md",
     "Algoritmos sobre grafos/Recorridas",
     "Algoritmos sobre grafos/Arbol de cubrimiento minimo",
     "Algoritmos sobre grafos/Camino mas corto",
