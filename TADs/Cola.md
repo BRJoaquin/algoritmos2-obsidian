@@ -12,7 +12,7 @@ Además de estas operaciones básicas, una cola puede tener otras operaciones co
 
 Una de las aplicaciones más comunes de las colas es la implementación de procesos en un sistema operativo. Los procesos se colocan en una cola y se ejecutan de acuerdo con el principio FIFO. También se utilizan en la gestión de recursos compartidos, como en una cola de impresión, donde los trabajos de impresión se procesan en el orden en que se reciben.
 
-En resumen, una cola es una estructura de datos que permite agregar elementos al final y eliminar elementos del principio siguiendo una regla de ordenamiento conocida como FIFO. Es una estructura de datos simple pero muy útil para una amplia gama de aplicaciones en la informática y otras áreas.
+En resumen, una cola es un TAD que permite agregar elementos al final y eliminar elementos del principio siguiendo una regla de ordenamiento conocida como FIFO. Es una TAD simple pero muy útil para una amplia gama de aplicaciones en la informática y otras áreas.
 
 # Definicion
 
@@ -56,7 +56,7 @@ En la implementación de una cola usando una lista enlazada, el método `enqueue
 
 ## Dequeue / desencolar
 
-El método `dequeue` es otra de las operaciones fundamentales en la estructura de datos de cola. La función de este método es eliminar el elemento que se encuentra al frente de la cola y devolver su valor, siguiendo el principio de "primero en entrar, primero en salir" (FIFO).
+El método `dequeue` es otra de las operaciones fundamentales en el TAD cola. La función de este método es eliminar el elemento que se encuentra al frente de la cola y devolver su valor, siguiendo el principio de "primero en entrar, primero en salir" (FIFO).
 
 En la implementación de una cola usando una lista enlazada, el método `dequeue` elimina el primer nodo de la lista y devuelve el valor de su elemento. Si la cola está vacía, el método `dequeue` lanza una excepción, ya que no hay ningún elemento que se pueda eliminar.
 
@@ -64,7 +64,7 @@ El método `dequeue` tiene una precondición muy importante: la cola no debe est
 
 ## Peek / tope
 
-El método `dequeue` es otra de las operaciones fundamentales en la estructura de datos de cola. La función de este método es eliminar el elemento que se encuentra al frente de la cola y devolver su valor, siguiendo el principio de "primero en entrar, primero en salir" (FIFO).
+El método `dequeue` es otra de las operaciones fundamentales en el TAD cola. La función de este método es eliminar el elemento que se encuentra al frente de la cola y devolver su valor, siguiendo el principio de "primero en entrar, primero en salir" (FIFO).
 
 En la implementación de una cola usando una lista enlazada, el método `dequeue` elimina el primer nodo de la lista y devuelve el valor de su elemento. Si la cola está vacía, el método `dequeue` lanza una excepción, ya que no hay ningún elemento que se pueda eliminar.
 
@@ -74,7 +74,7 @@ La postcondición de `peek` es que se devuelve el valor del elemento al frente d
 
 ## isEmpty / esVacia
 
-El método `isEmpty` es una operación común en la estructura de datos de cola. La función de este método es comprobar si la cola está vacía, es decir, si no hay elementos en la cola para eliminar.
+El método `isEmpty` es una operación común en el TAD cola. La función de este método es comprobar si la cola está vacía, es decir, si no hay elementos en la cola para eliminar.
 
 # Implementacion
 
