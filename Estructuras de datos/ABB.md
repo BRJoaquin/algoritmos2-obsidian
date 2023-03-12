@@ -242,6 +242,14 @@ En este caso, el tiempo de búsqueda, inserción y eliminación de elementos en 
 
 Para evitar que esto ocurra, se pueden utilizar diferentes técnicas de equilibrado de árboles, como el árbol [[AVL]], que garantizan que el árbol se mantenga balanceado y evite convertirse en una lista enlazada.
 
+## Probabilidad de desgradacion
+
+En el mundo real, la probabilidad de que un árbol binario de búsqueda (ABB) esté **tan desequilibrado** que afecte significativamente su rendimiento depende de varios factores, como el tipo de aplicación, la cantidad de datos y la distribución de los datos.
+
+**En general, la probabilidad de que un ABB esté muy desequilibrado disminuye a medida que aumenta el número de nodos en el árbol** y la distribución de los datos se vuelve más uniforme. En otras palabras, cuanto más grande es el árbol y más uniformemente distribuidos están los datos, menos probable es que el árbol esté desequilibrado.
+
+Sin embargo, en algunos casos, puede haber una serie de inserciones o eliminaciones que resulten en un árbol ABB muy desequilibrado, lo que puede afectar significativamente su rendimiento.
+
 # Ordenes temporales
 
 -   `insert(T value)`: el caso promedio ocurre cuando el árbol está balanceado (o cerca de estarlo). En este caso, se necesitan **O(log n)** comparaciones para encontrar la ubicación correcta del nuevo valor en el árbol. En el peor caso, el árbol no está balanceado, y se necesitan **O(n)** comparaciones para encontrar la ubicación correcta del nuevo valor. Por lo tanto, el orden temporal en el caso promedio y peor caso es O(n).
@@ -267,3 +275,12 @@ Para evitar que esto ocurra, se pueden utilizar diferentes técnicas de equilibr
 5.  **Compresión de datos**: Los ABB se pueden utilizar en la implementación de algoritmos de compresión de datos, como el algoritmo de [Huffman](https://es.wikipedia.org/wiki/Algoritmo_de_Huffman). En este caso, el árbol se utiliza para asignar códigos de compresión a los elementos, donde los elementos más frecuentes se asignan códigos más cortos.
 
 En general, los ABB son una estructura de datos muy versátil y se utilizan en una gran cantidad de aplicaciones. Su eficiencia en la búsqueda y ordenación de datos, así como su facilidad de implementación, los hacen muy populares en el desarrollo de software.
+
+
+# Visualización
+
+https://www.cs.usfca.edu/~galles/visualization/BST.html 
+
+# Mas info
+
+- https://www.geeksforgeeks.org/binary-search-tree-data-structure/
