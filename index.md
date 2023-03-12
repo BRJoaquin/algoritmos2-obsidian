@@ -2,13 +2,15 @@
 
 En mis primeros años estudiando Ingeniería en Sistemas había un sistema muy peculiar fuera de la facultad. Los alumnos dejaban sus apuntes una vez terminada una materia para que otros pudieran tener acceso a buenos resúmenes.
 
-Siempre me sorprendió al generosidad de conocimiento que existe en la informática en general, y soy partidario a seguir esa tradición ya que nos da la humilde lección: existe un otro que sabe mas. 
+Siempre me sorprendió la generosidad de conocimiento que existe en la informática en general, y soy partidario a seguir esa tradición ya que nos da la humilde lección: ``existe un otro que sabe mas``. 
 
 Como docente siempre trato de pensar una nueva forma de hacer llegar el conocimiento lo mas eficaz posible. Este resumen es uno de ellos, donde trato de dar una herramienta mas al estudio de la materia. 
 
-No piensa ser un temario completo y exhausto, pero si una buena guía para los puntos clave que se dan en el semestre.
+> [!warning]
+> No piensa ser un temario completo y exhausto, pero si una buena guía para los puntos clave que se dan en el semestre.
 
-De mas esta decir que quien quiera aportar a este proyecto puede hacer colaborando en el [repositorio](https://github.com/BRJoaquin/algoritmos2-obsidian).
+> [!info]
+> Quien quiera aportar a este proyecto puede hacer colaborando en el [repositorio](https://github.com/BRJoaquin/algoritmos2-obsidian).
 
 # Contenido
 
@@ -20,6 +22,7 @@ Con este libro, los lectores podrán adquirir una comprensión sólida y complet
 
 # Sobre la autoridad del contenido
 
+> [!info]
 > La mayoría de este contenido esta generado mediante IA.
 
 Es una realidad, hoy día es posible el ahorro de tiempo y no quiero tener crédito por algo que no esta escrito por mi. Sin embargo aun los generadores de texto necesitan supervision, es por tanto mi trabajo:
@@ -29,7 +32,6 @@ Es una realidad, hoy día es posible el ahorro de tiempo y no quiero tener créd
 3. Buscar ejemplos que lo conecten con las clases.
 
 # Sobre el autor
-
 
 Me llamo Joaquin Vigna, y soy un apasionado de la tecnología y el software. Me encanta crear soluciones innovadoras y efectivas para problemas complejos, y siempre estoy buscando nuevas formas de mejorar y aprender.
 

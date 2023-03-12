@@ -14,7 +14,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TADs/Cola.md",
+                "file": "index.md",
                 "mode": "source",
                 "source": false
               }
@@ -33,7 +33,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "TADs/Cola.md",
+                "file": "index.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -120,7 +120,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TADs/Cola.md",
+                "file": "index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -150,6 +150,7 @@
   },
   "active": "a9b5fd8057019022",
   "lastOpenFiles": [
+    "TADs/Cola.md",
     "Temario.md",
     "index.md",
     "Estructuras de datos/AVL.md",
@@ -166,7 +167,6 @@
     "TADs/Set.md",
     "TADs/Pila.md",
     "TADs/Lista.md",
-    "TADs/Cola.md",
     "Estructuras de datos/Lista doblemente encadenada.md",
     "Ordenes - The Big O.md",
     "Estructura de datos.md",
