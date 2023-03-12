@@ -6,6 +6,7 @@
       {
         "id": "0981468fbf96767d",
         "type": "tabs",
+        "dimension": 74.34412265758093,
         "children": [
           {
             "id": "f76055dfc5d0061d",
@@ -27,14 +28,58 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TADs/Cola.md",
+                "file": "TADs/Pila.md",
                 "mode": "source",
                 "source": false
               }
-            }
+            },
+            "group": "1246d354ea64bd7d"
           }
         ],
         "currentTab": 1
+      },
+      {
+        "id": "90c0f411e3061735",
+        "type": "tabs",
+        "dimension": 25.655877342419082,
+        "children": [
+          {
+            "id": "105f900d099a8726",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "file": "TADs/Pila.md",
+                "options": {
+                  "collapse-filter": true,
+                  "search": "",
+                  "localJumps": 1,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": false,
+                  "showTags": false,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": true,
+                  "colorGroups": [],
+                  "collapse-display": true,
+                  "showArrow": false,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": true,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 1,
+                  "close": false
+                }
+              }
+            },
+            "group": "1246d354ea64bd7d"
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -92,7 +137,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "TADs/Cola.md",
+                "file": "TADs/Pila.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -122,19 +167,20 @@
   },
   "active": "35d72195803612eb",
   "lastOpenFiles": [
-    "Estructuras de datos/Lista simplemente encadenada.md",
-    "TADs/Cola.md",
-    "Temario.md",
-    "Estructuras de datos/Lista doblemente encadenada.md",
-    "Estructuras de datos/ABB.md",
-    "Algoritmos sobre grafos/Arbol de cubrimiento minimo/Kruskal.md",
-    "TADs/Lista.md",
-    "index.md",
-    "Ordenes - The Big O.md",
-    "Estructura de datos.md",
     "TADs/Tabla.md",
     "TADs/Set.md",
     "TADs/Pila.md",
+    "TADs/Lista.md",
+    "TADs/Cola.md",
+    "Temario.md",
+    "Estructuras de datos/Lista simplemente encadenada.md",
+    "Estructuras de datos/AVLs.md",
+    "Estructuras de datos/Lista doblemente encadenada.md",
+    "Estructuras de datos/ABB.md",
+    "Algoritmos sobre grafos/Arbol de cubrimiento minimo/Kruskal.md",
+    "index.md",
+    "Ordenes - The Big O.md",
+    "Estructura de datos.md",
     "TADs/Cola de prioridad.md",
     "Algoritmos sobre grafos/Warshall.md",
     "Algoritmos sobre grafos/Recorridas/DFS.md",
@@ -147,7 +193,6 @@
     "Estructuras de datos/Tabla de hash.md",
     "Estructuras de datos/Multiestructuras.md",
     "Estructuras de datos/MFset.md",
-    "Estructuras de datos/Heap.md",
     "resources/img/35345672.jpeg",
     "Algoritmos sobre grafos/Recorridas",
     "Algoritmos sobre grafos/Arbol de cubrimiento minimo",

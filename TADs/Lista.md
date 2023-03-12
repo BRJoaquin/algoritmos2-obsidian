@@ -14,61 +14,50 @@ Una lista es un [[Tipo Abstracto de Dato (TAD)]] que se utiliza para modelar una
 template <typename T>
 class List {
 public:
-    // Constructs an empty list.
-    List();
-
-    // Copy constructor.
-    // Pre-condition: 'other' is a valid list object.
-    // Post-condition: This list is a deep copy of 'other'.
-    List(const List<T>& other);
-
-    // Destructor.
-    // Post-condition: All dynamically allocated memory for this list has been freed.
-    ~List();
 
     // Adds an item to the back of the list.
     // Post-condition: The size of the list has increased by 1.
-    void push_back(const T& item);
+    virtual void push_back(const T& item) = 0;
 
     // Adds an item to the front of the list.
     // Post-condition: The size of the list has increased by 1.
-    void push_front(const T& item);
+    virtual void push_front(const T& item) = 0;
 
     // Removes the item at the back of the list.
     // Pre-condition: The list is not empty.
     // Post-condition: The size of the list has decreased by 1.
-    void pop_back();
+    virtual void pop_back() = 0;
 
     // Removes the item at the front of the list.
     // Pre-condition: The list is not empty.
     // Post-condition: The size of the list has decreased by 1.
-    void pop_front();
+    virtual void pop_front() = 0;
 
 	// Get a element at certain position
 	// Pre-condition: A valid position (zero based)
-	T& get(int i);
+	virtual T& get(int i);
 
     // Removes all items from the list.
     // Post-condition: The size of the list is 0 and all dynamically allocated memory has been freed.
-    void clear();
+    virtual void clear() = 0;
 
     // Returns a reference to the item at the front of the list.
     // Pre-condition: The list is not empty.
-    T& front() const;
+    virtual T& front() const = 0;
 
     // Returns a reference to the item at the back of the list.
     // Pre-condition: The list is not empty.
-    T& back() const;
+    virtual T& back() const = 0;
 
     // Returns the number of items in the list.
-    int size() const;
+    virtual int size() const = 0;
 
     // Returns true if the list is empty, false otherwise.
-    bool empty() const;
+    virtual bool empty() const = 0;
 
 	// Returns true if the size of the list has reached the maximum 
 	// capacity, false otherwise. 
-	bool full() const;
+	virtual bool full() const = 0;
 };
 
 #endif // LIST_H

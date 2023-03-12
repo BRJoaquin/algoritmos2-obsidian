@@ -23,27 +23,27 @@ public:
     // Description: Inserts an element at the back of the queue.
     // Preconditions: None.
     // Postconditions: Adds 'value' to the back of the queue.
-    void enqueue(const T& value);
+    virtual void enqueue(const T& value) = 0;
 
     // Description: Removes and returns the element at the front of the queue.
     // Preconditions: The queue is not empty.
     // Postconditions: Removes and returns the element at the front of the queue. 
-    T dequeue();
+    virtual T dequeue() = 0;
 
     // Description: Returns the element at the front of the queue without removing it.
     // Preconditions: The queue is not empty.
     // Postconditions: Returns the element at the front of the queue.
-    T peek() const;
+    virtual T peek() const = 0;
 
     // Description: Returns true if the queue is empty, false otherwise.
     // Preconditions: None.
     // Postconditions: Returns true if the queue is empty, false otherwise.
-    bool isEmpty() const;
+    virtual bool isEmpty() const = 0;
 
     // Description: Returns the number of elements in the queue.
     // Preconditions: None.
     // Postconditions: Returns the number of elements in the queue.
-    int size() const;
+    virtual int size() const = 0;
 };
 
 ```
