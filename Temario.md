@@ -6,7 +6,7 @@
 	- [[Cola]] (TAD)
 	- [[Pila]] (TAD)
 	- [[ABB]] (arboles binarios de búsqueda)
-2) [[AVLs]]
+2) [[AVL]]
 3) [[Tabla de hash]]
 4) Grafo
 	- [[Grafo]] (TAD)
