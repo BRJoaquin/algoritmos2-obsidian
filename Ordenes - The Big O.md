@@ -132,7 +132,9 @@ El orden espacial de un algoritmo puede ser muy importante en situaciones en las
 
 Es importante tener en cuenta tanto el orden temporal como el orden espacial de un algoritmo al seleccionar la mejor solución para un problema determinado. A menudo, hay un compromiso entre la eficiencia temporal y espacial de un algoritmo, y es importante encontrar el equilibrio adecuado entre ambos para lograr el mejor rendimiento general.
 
-# Mas informacion
+# Mas información
 
 - https://www.geeksforgeeks.org/understanding-time-complexity-simple-examples/
 - https://www.freecodecamp.org/news/big-o-cheat-sheet-time-complexity-chart/
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/RATueyCIN80" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

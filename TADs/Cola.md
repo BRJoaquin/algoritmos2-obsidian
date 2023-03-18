@@ -80,7 +80,7 @@ El método `isEmpty` es una operación común en el TAD cola. La función de est
 
 ## Lista enlazada
 
-Hay varias formas de implementar una lista en C++, pero una de las más comunes es mediante el uso de una [[Lista simplemente encadenada]]. Una lista enlazada es una [[Estructura de datos]] en la que cada elemento, o nodo, contiene un valor y un puntero al siguiente nodo en la lista. El primer nodo de la lista se conoce como la cabeza, y el último nodo se llama la cola.
+Hay varias formas de implementar una lista en C++, pero una de las más comunes es mediante el uso de una [[Lista simplemente encadenada]]. Una lista enlazada es una estructura de datos en la que cada elemento, o nodo, contiene un valor y un puntero al siguiente nodo en la lista. El primer nodo de la lista se conoce como la cabeza, y el último nodo se llama la cola.
 
 Para crear una lista enlazada, se puede definir una clase o una estructura que represente un nodo en la lista, y que contenga un miembro para almacenar el valor del nodo y otro miembro que sea un puntero al siguiente nodo en la lista.
 

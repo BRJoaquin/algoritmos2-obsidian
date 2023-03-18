@@ -11,16 +11,43 @@
           {
             "id": "a9b5fd8057019022",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
+                "file": "Estructuras de datos/Tabla de hash.md",
+                "mode": "source",
+                "source": false
+              },
+              "pinned": true
+            }
+          },
+          {
+            "id": "e5df3255d470f228",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tipo Abstracto de Dato (TAD).md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "bc7ade3b5498e519",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Estructura de datos.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       },
       {
         "id": "90c0f411e3061735",
@@ -33,7 +60,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "index.md",
+                "file": "Estructura de datos.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -56,7 +83,7 @@
                   "repelStrength": 10,
                   "linkStrength": 1,
                   "linkDistance": 250,
-                  "scale": 0.48854597807787414,
+                  "scale": 0.11819144317824483,
                   "close": true
                 }
               }
@@ -91,7 +118,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "avl",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -100,7 +127,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -120,7 +148,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "index.md",
+                "file": "Estructura de datos.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -148,12 +176,31 @@
       "publish:Publish changes": false
     }
   },
-  "active": "a9b5fd8057019022",
+  "active": "bc7ade3b5498e519",
   "lastOpenFiles": [
-    "TADs/Cola.md",
-    "Temario.md",
-    "index.md",
     "Estructuras de datos/AVL.md",
+    "Estructuras de datos/Tabla de hash.md",
+    "Conceptos varios/Complejidad cognitiva.md",
+    "TADs/Tabla.md",
+    "Tipo Abstracto de Dato (TAD).md",
+    "TADs/Cola.md",
+    "Conceptos varios",
+    "TADs/Set.md",
+    "resources/Pasted image 20230318160911.png",
+    "resources/Pasted image 20230318160837.png",
+    "resources/DeepinScreenshot_select-area_20230318151027.png",
+    "resources/Pasted image 20230318150926.png",
+    "resources/Pasted image 20230318150837.png",
+    "Estructura de datos.md",
+    "Ordenes - The Big O.md",
+    "resources/bigo.png",
+    "index.md",
+    "Temario.md",
+    "resources/35345672.jpeg",
+    "resources/Pasted image 20230318115003.png",
+    "resources/Pasted image 20230318114952.png",
+    "resources/Pasted image 20230318111041.png",
+    "colisiones.md",
     "Estructuras de datos/ABB.md",
     "Estructuras de datos/Lista simplemente encadenada.md",
     "Algoritmos sobre grafos/Camino mas corto/Floyd.md",
@@ -163,33 +210,21 @@
     "Algoritmos sobre grafos/Arbol de cubrimiento minimo/Kruskal.md",
     "Tacticas/Backtracking.md",
     "TADs/Grafo.md",
-    "TADs/Tabla.md",
-    "TADs/Set.md",
     "TADs/Pila.md",
     "TADs/Lista.md",
     "Estructuras de datos/Lista doblemente encadenada.md",
-    "Ordenes - The Big O.md",
-    "Estructura de datos.md",
     "TADs/Cola de prioridad.md",
     "Algoritmos sobre grafos/Warshall.md",
-    "Algoritmos sobre grafos/Recorridas/DFS.md",
-    "Algoritmos sobre grafos/Orden topologico.md",
-    "Algoritmos sobre grafos/Recorridas/BFS.md",
-    "Estructuras de datos/Tabla de hash.md",
-    "resources/img/35345672.jpeg",
     "Algoritmos sobre grafos/Recorridas",
     "Algoritmos sobre grafos/Arbol de cubrimiento minimo",
     "Algoritmos sobre grafos/Camino mas corto",
     "Tacticas",
     "Algoritmos sobre grafos",
     "Lista encadenada",
-    "resources/img/bigo.png",
     "publish.css",
     "theme.css",
     "Untitled.canvas",
     "Untitled.canvas",
-    "resources/img",
-    "resources",
-    "images.jpeg"
+    "resources/img"
   ]
 }

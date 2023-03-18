@@ -29,7 +29,7 @@ Existen cuatro casos posibles de desequilibrio en un árbol AVL, que se determin
 
 > Nota: los factores de balance de ejemplo son siempre calculando el balance como la resta de la altura del sub-árbol izquierdo menos la altura del sub-árbol derecho.
 
-# Implementacion
+# Implementación
 
 ## Inserción
 
@@ -327,19 +327,20 @@ La eliminación en un árbol AVL también mantiene el equilibrio, ya que despué
 | --- | --- | --- |
 | Balanceo | Sí, siempre equilibrado | No necesariamente equilibrado |
 | Altura máxima | O(log n) | O(n) |
-| Inserción | O(log n) en promedio, O(n) en el peor de los casos | O(log n) en promedio, O(n) en el peor de los casos |
-| Eliminación | O(log n) en promedio, O(n) en el peor de los casos | O(log n) en promedio, O(n) en el peor de los casos |
-| Búsqueda | O(log n) en promedio, O(n) en el peor de los casos | O(log n) en promedio, O(n) en el peor de los casos |
+| Inserción | O(log n) | O(log n) en promedio, O(n) en el peor de los casos |
+| Eliminación | O(log n) | O(log n) en promedio, O(n) en el peor de los casos |
+| Búsqueda | O(log n) | O(log n) en promedio, O(n) en el peor de los casos |
 
 Se recomienda usar un árbol AVL en situaciones donde la eficiencia en la inserción y eliminación de nodos es crítica. Un árbol AVL es especialmente útil en aplicaciones donde el árbol está siendo constantemente modificado y actualizado, y se requiere un equilibrio óptimo para mantener un rendimiento consistente. Por ejemplo, en aplicaciones de bases de datos, los árboles AVL se utilizan a menudo para mantener la eficiencia en la búsqueda de datos y para mantener un alto rendimiento en aplicaciones que involucran grandes cantidades de datos.
 
-Por otro lado, un árbol binario de búsqueda (ABB) es adecuado para aplicaciones donde el equilibrio del árbol no es una prioridad. **El ABB es una estructura de datos más simple y fácil de implementar que un árbol AVL**, y puede ser adecuado para aplicaciones más pequeñas donde el rendimiento no es crítico. Por ejemplo, un ABB podría ser utilizado en aplicaciones de búsqueda de texto en documentos individuales, donde el número de documentos es relativamente pequeño y no se requiere una actualización constante de la estructura de datos.
+Por otro lado, un árbol binario de búsqueda (ABB) es adecuado para aplicaciones donde el equilibrio del árbol no es una prioridad. **El ABB es una estructura de datos más simple y fácil de implementar que un árbol AVL** (véase: [[Complejidad cognitiva]]), y puede ser adecuado para aplicaciones más pequeñas donde el rendimiento no es crítico. Por ejemplo, un ABB podría ser utilizado en aplicaciones de búsqueda de texto en documentos individuales, donde el número de documentos es relativamente pequeño y no se requiere una actualización constante de la estructura de datos.
+
+> [!quote]
+> "Yes, AVL-trees - this was a mistake of my youth" - ([Adelson-Velski, 2002, Radio Liberty](https://www.chessprogramming.org/Template:Quote_Donskoy_on_AVL))
 
 # Visualización
 
 https://www.cs.usfca.edu/~galles/visualization/AVLtree.html
-
-
 
 # Mas info
 
