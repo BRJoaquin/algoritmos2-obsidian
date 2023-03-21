@@ -724,6 +724,7 @@ ul li:not(.task-list-item)::before {
   padding: 0;
   font-weight: bold;
   text-shadow: 0 0 0.5em var(--accent-2);
+  float: left;
 }
 ul ul li:not(.task-list-item)::before {
   content: '•';
