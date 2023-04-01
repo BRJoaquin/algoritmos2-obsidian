@@ -10,6 +10,18 @@ Un heap binario es una [[Estructura de datos]] de tipo árbol binario que cumple
 
 ![[Pasted image 20230401085607.jpg|700]]
 
+
+> Cada nodo tiene tres posibilidades:
+> 1) No tener hijos (hoja).
+>    Ejemplos: 44, 35, 33, 42, 27
+> 2) Tener ambos hijos
+>    Ejemplos: 10, 14, 19, 26
+> 3) Tener solo hijo izquierdo. En este caso el hundir de un nodo se compara con dicho nodo.
+>    Ejemplo: 33 (solo se puede tener uno de estos nodos)
+>
+> Debido a la propiedad estructural de un heap es imposible **solo** tener hijo derecho.
+
+
 3.  **Propiedad de orden**: El árbol binario satisface una condición de orden específica, lo que hace que sea un "min-heap" o un "max-heap". En un min-heap, cada nodo tiene un valor que es menor o igual que el valor de sus hijos. Esto implica que el nodo con el valor más pequeño siempre estará en la raíz del árbol. Por otro lado, en un max-heap, cada nodo tiene un valor mayor o igual que el valor de sus hijos, lo que significa que el nodo con el valor más grande siempre estará en la raíz del árbol.
    
 ![[Pasted image 20230401085720.png]]
@@ -128,7 +140,5 @@ El método `deletePeek` (a veces llamado `extract-min` para un min-heap o `extra
 
 Este proceso garantiza que el elemento prioritario se elimine del heap y que se mantengan las propiedades de forma y orden del heap.
 
-> Cada nodo tiene tres posibilidades:
-> 1) No tener hijos (hoja)
-> 2) Tener ambos hijos
-> 3) Tener solo hijo izquierdo. En este caso el hundir de un nodo se compara con dicho nodo.
+> Hay que tener en cuenta que un nodo puede tener solo hijo izquierdo.
+
