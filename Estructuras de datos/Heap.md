@@ -115,4 +115,20 @@ Ahora, el proceso de inserción ha terminado, ya que hemos mantenido las propied
 
 ## Eliminar (deletePeek)
 
-El método `deletePeek` (a veces llamado `extract-min` para un min-heap o `extract-max` para un max-heap) se utiliza para eliminar y devolver el elemento en la raiz del heap. Es decir el menor elemento en caso de min-heap
+El método `deletePeek` (a veces llamado `extract-min` para un min-heap o `extract-max` para un max-heap) se utiliza para eliminar y devolver el elemento en la raíz del heap. Es decir el menor elemento en caso de min-heap.
+
+## Proceso
+
+1.  **Intercambiar** el elemento prioritario (raíz) con el último elemento del heap.
+2.  **Eliminar el último elemento** del heap (que era la raíz original).
+3.  Hacer un proceso de **hundir** hacia abajo (Down-Heap) para mantener las propiedades de orden: 
+   a. Comparar el elemento en la raíz con sus nodos hijos y encontrar el menor de ellos (en un min-heap, sino el mayor de ellos). 
+   b. Si el elemento en la raíz es mayor que el menor de sus nodos hijos, intercambiar el elemento en la raíz con el menor de sus nodos hijos. 
+   c. Repetir los pasos (a) y (b) hasta que el elemento en la raíz sea menor que ambos nodos hijos o no tenga más nodos hijos.
+
+Este proceso garantiza que el elemento prioritario se elimine del heap y que se mantengan las propiedades de forma y orden del heap.
+
+> Cada nodo tiene tres posibilidades:
+> 1) No tener hijos (hoja)
+> 2) Tener ambos hijos
+> 3) Tener solo hijo izquierdo. En este caso el hundir de un nodo se compara con dicho nodo.
