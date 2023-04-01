@@ -420,3 +420,4 @@ En resumen, este código define una clase `BinaryHeap` que implementa un max-hea
 
 # Heap + Cola de prioridad
 
+La relación entre un heap y una [[Cola de prioridad]] es que un heap es una implementación común y eficiente de una cola de prioridades. Un heap puede ser utilizado para implementar las operaciones básicas de una cola de prioridades, como insertar elementos, eliminar el elemento prioritario y verificar si la cola de prioridades está vacía, todo ello en tiempo logarítmico (O(log n)). Esto hace que un heap sea una opción popular para implementar colas de prioridades en aplicaciones prácticas.
