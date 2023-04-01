@@ -142,3 +142,69 @@ Este proceso garantiza que el elemento prioritario se elimine del heap y que se 
 
 > Hay que tener en cuenta que un nodo puede tener solo hijo izquierdo.
 
+### Ejemplo
+
+Supongamos que tenemos el siguiente min-heap:
+
+```
+        10
+       /  \
+     15    20
+    /  \   / \
+   30  40 50  60
+```
+
+A continuación, se muestra el proceso de eliminar el elemento prioritario paso a paso:
+
+1.  Intercambie el elemento prioritario (raíz) con el último elemento del heap:
+
+```
+        60
+       /  \
+     15    20
+    /  \   / \
+   30  40 50  10
+```
+
+2.  Elimine el último elemento del heap (anteriormente la raíz):
+
+```
+        60
+       /  \
+     15    20
+    /  \   /
+   30  40 50
+```
+
+3.  Hunda el elemento en la raíz hacia abajo (Down-Heap) para mantener las propiedades de orden del heap:
+
+Comparamos el elemento en la raíz (60) con sus nodos hijos (15 y 20) y encontramos el menor (15). Intercambiamos 60 con 15:
+
+```
+        15
+       /  \
+     60    20
+    /  \   /
+   30  40 50
+```
+
+Continuamos hundiendo hacia abajo y comparamos 60 con sus nodos hijos (30 y 40), encontramos el menor (30) e intercambiamos 60 con 30:
+
+```
+        15
+       /  \
+     30    20
+    /  \   /
+   60  40 50
+```
+
+El proceso de hundir hacia abajo ha terminado, ya que 60 es hoja (no tiene hijos).
+
+## Tope (peek)
+
+
+
+
+
+# Contras
+
