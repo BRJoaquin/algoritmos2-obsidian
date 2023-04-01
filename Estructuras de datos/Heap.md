@@ -239,7 +239,9 @@ En términos más matemáticos, si analizamos el número de intercambios esperad
 
 > `1 + 1/2 + 1/4 + 1/8 + ... = 2`
 
--   **DeletePeek (Extract-Min/Max)**: La operación de eliminar y devolver el elemento prioritario tiene una complejidad de tiempo de O(log n) en el peor de los casos. Esto se debe a que en el peor de los casos, el elemento intercambiado con la raíz puede tener que hundirse hacia abajo (Down-Heap) hasta la hoja más profunda del árbol, lo que implica atravesar la altura del árbol, que es logarítmica con respecto al número de elementos (n) en el heap.
+-   **DeletePeek (Extract-Min/Max)**: La operación de eliminar y devolver el elemento prioritario tiene una complejidad de tiempo de O(log n). Esto se debe a que en el peor de los casos, el elemento intercambiado con la raíz puede tener que hundirse hacia abajo (Down-Heap) hasta la hoja más profunda del árbol, lo que implica atravesar la altura del árbol, que es logarítmica con respecto al número de elementos (n) en el heap.
+  
+  > A diferencia de la operación insertar, es muy probable que un elemento que el elemento que se hunde desde la raíz vuelva a estar en lo últimos niveles por lo cual **no** tiene un O(1)cp
 
 -   **Peek**: La operación de obtener el elemento prioritario sin eliminarlo tiene una complejidad de tiempo constante O(1), ya que solo implica acceder al primer elemento del heap (la raíz), sin realizar ninguna otra operación o modificación en la estructura del heap.
 
