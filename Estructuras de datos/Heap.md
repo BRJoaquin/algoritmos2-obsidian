@@ -313,11 +313,11 @@ De esta manera, podemos representar de manera eficiente un heap binario utilizan
 
 ## Desventajas
 
-1.  **Tamaño fijo**: En el caso de un array de tamaño fijo, si el heap crece y supera la capacidad del array, es necesario redimensionar el array, lo que implica copiar los elementos a un nuevo array más grande. Esto puede ser costoso en términos de tiempo y memoria, especialmente si el redimensionamiento ocurre con frecuencia.
+1.  **Tamaño fijo**: En el caso de un array de tamaño fijo, si el heap crece y supera la capacidad del array, es necesario re-dimensionar el array, lo que implica copiar los elementos a un nuevo array más grande. Esto puede ser costoso en términos de tiempo y memoria, especialmente si el re-dimensionamiento ocurre con frecuencia.
 
 2.  **No es óptimo para buscar o eliminar elementos arbitrarios**: Como mencioné anteriormente, un heap no es la estructura de datos más adecuada para buscar o eliminar elementos específicos que no sean la raíz, independientemente de si está implementado utilizando un array o no. Las búsquedas y eliminaciones de elementos específicos pueden ser ineficientes en términos de tiempo.
 
-## Codigo
+## Código
 
 ```cpp
 #include <iostream>
@@ -393,3 +393,30 @@ private:
     }
 };
 ```
+
+Este código en C++ define una clase `BinaryHeap` que implementa un max-heap utilizando un array. Un max-heap es una estructura de datos que mantiene el orden parcial de sus elementos de tal manera que el elemento máximo siempre está en la raíz. A continuación se detallan las partes clave del código:
+
+1.  La clase `BinaryHeap` es una plantilla que admite un tipo de datos genérico `T`. Esto permite que el heap almacene elementos de cualquier tipo que se pueda comparar (que admita operadores `<`, `>` y `==`).
+   
+> [!warning]
+> Es importante que el tipo `T` implemente estas operaciones para ser usando dentro del heap. Tipos primitivos cono `int` ya lo tienen en implementado.
+
+2.  La función constructora `BinaryHeap(int capacity)` inicializa el heap con una capacidad dada, crea un array dinámico de tamaño `capacity + 1`, y establece el tamaño del heap en 0. El array se crea con un tamaño de `capacity + 1` porque el primer elemento del array (índice 0) se deja sin usar para simplificar los cálculos de índice en las funciones `swim` y `sink`.
+
+3.  La función destructora `~BinaryHeap()` libera la memoria utilizada por el array dinámico.
+
+4.  La función `insert(T value)` inserta un nuevo elemento en el heap. Si el heap está lleno, se muestra un mensaje de error. De lo contrario, incrementa el tamaño del heap, agrega el elemento al final del array, y lo "flota" hacia arriba (swim) para mantener la propiedad de max-heap.
+
+5.  La función `removeMax()` elimina y devuelve el elemento máximo del heap (la raíz). Si el heap está vacío, se muestra un mensaje de error. De lo contrario, intercambia el último elemento con la raíz, reduce el tamaño del heap en 1 y "hunde" (sink) el elemento en la posición de la raíz para mantener la propiedad de max-heap.
+
+6.  La función `isEmpty()` devuelve verdadero si el heap está vacío (tamaño 0) y falso de lo contrario.
+
+7.  Las funciones privadas `swim(int index)` y `sink(int index)` se utilizan para mantener la propiedad de max-heap al flotar hacia arriba (swim) y hundir (sink) elementos en el heap.
+
+8.  La función privada `swap(int i, int j)` intercambia dos elementos en el array del heap.
+
+
+En resumen, este código define una clase `BinaryHeap` que implementa un max-heap utilizando un array. La clase admite operaciones básicas como insertar, eliminar el elemento máximo y verificar si el heap está vacío.
+
+# Heap + Cola de prioridad
+
