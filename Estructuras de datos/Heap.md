@@ -316,3 +316,80 @@ De esta manera, podemos representar de manera eficiente un heap binario utilizan
 1.  **Tamaño fijo**: En el caso de un array de tamaño fijo, si el heap crece y supera la capacidad del array, es necesario redimensionar el array, lo que implica copiar los elementos a un nuevo array más grande. Esto puede ser costoso en términos de tiempo y memoria, especialmente si el redimensionamiento ocurre con frecuencia.
 
 2.  **No es óptimo para buscar o eliminar elementos arbitrarios**: Como mencioné anteriormente, un heap no es la estructura de datos más adecuada para buscar o eliminar elementos específicos que no sean la raíz, independientemente de si está implementado utilizando un array o no. Las búsquedas y eliminaciones de elementos específicos pueden ser ineficientes en términos de tiempo.
+
+## Codigo
+
+```cpp
+#include <iostream>
+
+template <typename T>
+class BinaryHeap {
+public:
+    BinaryHeap(int capacity) : size(0), capacity(capacity) {
+        heap = new T[capacity + 1];
+    }
+
+    ~BinaryHeap() {
+        delete[] heap;
+    }
+
+    // Insertar un elemento en el heap
+    void insert(T value) {
+        if (size == capacity) {
+            std::cout << "Heap is full" << std::endl;
+            return;
+        }
+        size++;
+        heap[size] = value;
+        swim(size);
+    }
+
+    // Eliminar el elemento máximo
+    T removeMax() {
+        if (isEmpty()) {
+            std::cout << "Heap is empty" << std::endl;
+            return T();
+        }
+        T maxValue = heap[1];
+        swap(1, size);
+        size--;
+        sink(1);
+        return maxValue;
+    }
+
+    // Verificar si el heap está vacío
+    bool isEmpty() {
+        return size == 0;
+    }
+
+private:
+    T* heap;
+    int size;
+    int capacity;
+
+    // Mantener la propiedad de max-heap
+    void swim(int index) {
+        while (index > 1 && heap[index / 2] < heap[index]) {
+            swap(index, index / 2);
+            index = index / 2;
+        }
+    }
+
+    void sink(int index) {
+        while (2 * index <= size) {
+            int j = 2 * index;
+            if (j < size && heap[j] < heap[j + 1]) j++;
+            if (heap[index] >= heap[j]) break;
+            swap(index, j);
+            index = j;
+        }
+    }
+
+    // Intercambiar dos elementos en el heap
+    void swap(int i, int j) {
+        T temp = heap[i];
+        heap[i] = heap[j];
+        heap[j] = temp;
+    }
+};
+```
