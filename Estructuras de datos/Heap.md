@@ -302,3 +302,17 @@ Mapeo:
 -   El hijo derecho de 20 (50) se almacena en la posición 4 del array (2 * 1 + 2 = 4).
 
 De esta manera, podemos representar de manera eficiente un heap binario utilizando un array y acceder a los elementos relacionados (padre, hijo izquierdo, hijo derecho) mediante simples cálculos de índice.
+
+## Ventajas
+
+1.  **Eficiencia en el uso de memoria**: Al utilizar un array para representar un heap, no es necesario almacenar punteros explícitos para los nodos hijos y padres, lo que ahorra memoria. La relación padre-hijo se mantiene a través de cálculos de índices basados en la posición del elemento en el array.
+
+2.  **Acceso rápido a elementos padres e hijos**: En un heap binario implementado con un array, dado el índice `i` de un elemento, es fácil calcular los índices de su padre, hijo izquierdo y hijo derecho mediante fórmulas simples.
+
+3.  **Fácil de implementar**: La implementación de un heap utilizando un array es simple y directa. La mayoría de las operaciones en un heap, como insertar y eliminar elementos, se pueden realizar mediante manipulaciones de índices en lugar de modificar punteros explícitos.
+
+## Desventajas
+
+1.  **Tamaño fijo**: En el caso de un array de tamaño fijo, si el heap crece y supera la capacidad del array, es necesario redimensionar el array, lo que implica copiar los elementos a un nuevo array más grande. Esto puede ser costoso en términos de tiempo y memoria, especialmente si el redimensionamiento ocurre con frecuencia.
+
+2.  **No es óptimo para buscar o eliminar elementos arbitrarios**: Como mencioné anteriormente, un heap no es la estructura de datos más adecuada para buscar o eliminar elementos específicos que no sean la raíz, independientemente de si está implementado utilizando un array o no. Las búsquedas y eliminaciones de elementos específicos pueden ser ineficientes en términos de tiempo.
