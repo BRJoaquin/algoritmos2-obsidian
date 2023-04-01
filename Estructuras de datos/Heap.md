@@ -202,9 +202,39 @@ El proceso de hundir hacia abajo ha terminado, ya que 60 es hoja (no tiene hijos
 
 ## Tope (peek)
 
+El método `peek` es una operación simple en un heap (ya sea min-heap o max-heap) que devuelve el elemento prioritario sin eliminarlo del heap. El elemento prioritario es el que se encuentra en la raíz del árbol.
+
+Para un min-heap, el elemento prioritario es el elemento con el valor mínimo, mientras que para un max-heap, es el elemento con el valor máximo.
+
+En el ejemplo de min-heap que hemos estado utilizando, el heap se ve así:
+
+```
+        15
+       /  \
+     30    20
+    /  \   /
+   60  40 50
+```
+
+Al usar el método `peek` en este min-heap, simplemente devolveríamos el valor en la raíz del árbol, que en este caso es 15, sin modificar la estructura del heap.
+
+El método `peek` es útil cuando solo necesitas conocer el elemento de la raiz sin eliminarlo o modificar la estructura del heap. La complejidad de tiempo para esta operación es O(1), ya que solo implica acceder al primer elemento del heap.
+
+# Ordenes temporales
+| Operación  | Complejidad de tiempo |
+|------------|-----------------------|
+| Insert     | O(1)cp / O(log n)pc              |
+| DeletePeek (Extract-Min/Max) | O(log n) |
+| Peek       | O(1)                  |
+
+Explicación:
+
+-   **Insert**: La operación de inserción tiene una complejidad de tiempo de O(log n) en el peor de los casos. Esto se debe a que en el peor de los casos, el elemento insertado puede tener que flotar hacia arriba (Up-Heap) hasta la raíz del árbol, lo que implica atravesar la altura del árbol. La altura de un heap binario completo es logarítmica con respecto al número de elementos (n) en el heap.
+
+-   **DeletePeek (Extract-Min/Max)**: La operación de eliminar y devolver el elemento prioritario tiene una complejidad de tiempo de O(log n) en el peor de los casos. Esto se debe a que en el peor de los casos, el elemento intercambiado con la raíz puede tener que hundirse hacia abajo (Down-Heap) hasta la hoja más profunda del árbol, lo que implica atravesar la altura del árbol, que es logarítmica con respecto al número de elementos (n) en el heap.
+    
+-   **Peek**: La operación de obtener el elemento prioritario sin eliminarlo tiene una complejidad de tiempo constante O(1), ya que solo implica acceder al primer elemento del heap (la raíz), sin realizar ninguna otra operación o modificación en la estructura del heap.
 
 
-
-
-# Contras
+# Contras / mal uso
 
