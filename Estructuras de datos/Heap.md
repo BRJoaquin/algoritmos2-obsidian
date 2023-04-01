@@ -248,3 +248,17 @@ En términos más matemáticos, si analizamos el número de intercambios esperad
 
 # Contras / mal uso
 
+Un heap no es la estructura de datos más adecuada para ciertas operaciones, especialmente cuando se trata de buscar o eliminar un elemento específico que no sea la raíz. Esto se debe a las siguientes razones:
+
+1.  **Búsqueda ineficiente**: A diferencia de otras estructuras de datos como árboles binarios de búsqueda (BST) o tablas hash, un heap no está diseñado para proporcionar búsquedas rápidas de elementos arbitrarios. La búsqueda de un elemento específico en un heap puede tomar un tiempo de O(n) en el peor de los casos, ya que es posible que tenga que recorrer todos los elementos del árbol.
+
+2.  **Eliminación ineficiente de elementos específicos**: Eliminar un elemento específico que no sea la raíz en un heap puede ser costoso en términos de tiempo. Primero, debe encontrar el elemento en el heap, lo que puede llevar O(n) en el peor de los casos. Luego, debe eliminar el elemento y restaurar las propiedades del heap, lo que puede tomar un tiempo de O(log n). Por lo tanto, eliminar un elemento específico en un heap puede tener una complejidad de tiempo total de O(n).
+
+Dado que un heap está diseñado principalmente para mantener el orden parcial (mínimo o máximo) y no proporciona un acceso eficiente a elementos arbitrarios, no es la estructura de datos más adecuada para operaciones que requieren buscar o eliminar elementos específicos. En tales casos, es posible que desee considerar otras estructuras de datos, como árboles binarios de búsqueda, tablas hash o árboles balanceados, que ofrecen búsquedas y eliminaciones más eficientes para elementos específicos.
+
+# Implementación con array
+
+Al implementar un heap utilizando un array, la estructura de árbol implícita se representa mediante un array lineal. Esta representación es muy común y eficiente en términos de uso de memoria.
+
+
+![[Pasted image 20230401102534.png]]
