@@ -230,6 +230,14 @@ El método `peek` es útil cuando solo necesitas conocer el elemento de la raiz 
 Explicación:
 
 -   **Insert**: La operación de inserción tiene una complejidad de tiempo de O(log n) en el peor de los casos. Esto se debe a que en el peor de los casos, el elemento insertado puede tener que flotar hacia arriba (Up-Heap) hasta la raíz del árbol, lo que implica atravesar la altura del árbol. La altura de un heap binario completo es logarítmica con respecto al número de elementos (n) en el heap.
+  
+  En la mayoría de los casos, el número de intercambios que se deben realizar es pequeño. La altura del árbol es `log_2(n)`, donde n es el número de nodos. Sin embargo, la probabilidad de que se necesiten `log_2(n)` intercambios es baja, ya que es más probable que el elemento que estamos insertando no tenga que recorrer todo el camino hasta la raíz.
+
+> **véase:** [Average Case Analysis of Heap Building by Repeated Insertion](https://web.archive.org/web/20160205023201/http://www.stats.ox.ac.uk/__data/assets/pdf_file/0015/4173/heapbuildjalg.pdf)
+
+En términos más matemáticos, si analizamos el número de intercambios esperados en la inserción, resulta ser una serie geométrica que converge a una suma finita, lo que implica un tiempo promedio constante.
+
+> `1 + 1/2 + 1/4 + 1/8 + ... = 2`
 
 -   **DeletePeek (Extract-Min/Max)**: La operación de eliminar y devolver el elemento prioritario tiene una complejidad de tiempo de O(log n) en el peor de los casos. Esto se debe a que en el peor de los casos, el elemento intercambiado con la raíz puede tener que hundirse hacia abajo (Down-Heap) hasta la hoja más profunda del árbol, lo que implica atravesar la altura del árbol, que es logarítmica con respecto al número de elementos (n) en el heap.
 
