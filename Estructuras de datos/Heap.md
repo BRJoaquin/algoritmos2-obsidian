@@ -232,7 +232,7 @@ Explicación:
 -   **Insert**: La operación de inserción tiene una complejidad de tiempo de O(log n) en el peor de los casos. Esto se debe a que en el peor de los casos, el elemento insertado puede tener que flotar hacia arriba (Up-Heap) hasta la raíz del árbol, lo que implica atravesar la altura del árbol. La altura de un heap binario completo es logarítmica con respecto al número de elementos (n) en el heap.
 
 -   **DeletePeek (Extract-Min/Max)**: La operación de eliminar y devolver el elemento prioritario tiene una complejidad de tiempo de O(log n) en el peor de los casos. Esto se debe a que en el peor de los casos, el elemento intercambiado con la raíz puede tener que hundirse hacia abajo (Down-Heap) hasta la hoja más profunda del árbol, lo que implica atravesar la altura del árbol, que es logarítmica con respecto al número de elementos (n) en el heap.
-    
+
 -   **Peek**: La operación de obtener el elemento prioritario sin eliminarlo tiene una complejidad de tiempo constante O(1), ya que solo implica acceder al primer elemento del heap (la raíz), sin realizar ninguna otra operación o modificación en la estructura del heap.
 
 
