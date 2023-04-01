@@ -258,7 +258,47 @@ Dado que un heap está diseñado principalmente para mantener el orden parcial (
 
 # Implementación con array
 
-Al implementar un heap utilizando un array, la estructura de árbol implícita se representa mediante un array lineal. Esta representación es muy común y eficiente en términos de uso de memoria.
-
-
 ![[Pasted image 20230401102534.png]]
+
+Un heap binario puede ser representado de manera eficiente utilizando un array lineal, mapeando los nodos del árbol a elementos en el array. Este mapeo se realiza siguiendo un orden de nivel (también conocido como recorrido por niveles), es decir, se recorre cada nivel del árbol de izquierda a derecha.
+
+Aquí está cómo se realiza el mapeo:
+
+1.  El primer elemento del array (índice 0) representa la raíz del árbol.
+   
+   > [!warning]
+   > También es posible implementar el heap donde la raíz se encuentra en la posición 1.
+   > Esto tiene consecuencias en manejo de indices como por ejemplo el calculo de la posiscion de los hijos y padre.
+   
+   
+1.  Para cada elemento en el array con índice `i`:
+    -   El hijo izquierdo del elemento se encuentra en la posición `2 * i + 1`.
+    -   El hijo derecho del elemento se encuentra en la posición `2 * i + 2`.
+    -   El padre del elemento se encuentra en la posición `(i - 1) / 2` (redondeado hacia abajo en caso de división entera).
+
+> De tener la raiz en la posición 1 quedaría:
+>	-   El hijo izquierdo del elemento se encuentra en la posición `2 * i.`
+>	-   El hijo derecho del elemento se encuentra en la posición `2 * i + 1`.
+>	-   El padre del elemento se encuentra en la posición `i / 2` (redondeado hacia abajo en caso de división entera).
+
+Tomemos un ejemplo de un min-heap y veamos cómo se mapea con un array:
+
+```
+        10
+       /  \
+     20    30
+    /  \
+   40  50
+```
+
+Array: `[10, 20, 30, 40, 50]`
+
+Mapeo:
+
+-   La raíz del árbol (10) se almacena en la posición 0 del array.
+-   El hijo izquierdo de 10 (20) se almacena en la posición 1 del array (2 * 0 + 1 = 1).
+-   El hijo derecho de 10 (30) se almacena en la posición 2 del array (2 * 0 + 2 = 2).
+-   El hijo izquierdo de 20 (40) se almacena en la posición 3 del array (2 * 1 + 1 = 3).
+-   El hijo derecho de 20 (50) se almacena en la posición 4 del array (2 * 1 + 2 = 4).
+
+De esta manera, podemos representar de manera eficiente un heap binario utilizando un array y acceder a los elementos relacionados (padre, hijo izquierdo, hijo derecho) mediante simples cálculos de índice.
