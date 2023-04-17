@@ -86,7 +86,19 @@ Por otro lado, para grafos **densos** (alta densidad), la **matriz de adyacencia
 
 ## Conexidad
 
+La conexidad es una propiedad de los grafos que indica si hay un camino entre cada par de nodos en el grafo.
+
+Un **grafo no dirigido es conexo** **si existe al menos un camino entre cada par de nodos**. Es decir, se puede llegar desde cualquier nodo a cualquier otro nodo del grafo siguiendo las aristas. Si un grafo no es conexo, se considera desconexo.
+
+En el caso de **grafos dirigidos,** la noción de conexidad se extiende a la idea de "**fuertemente conexo**" y "**débilmente conexo**". **Un grafo dirigido es fuertemente conexo si existe un camino dirigido entre cada par de nodos**, es decir, se puede llegar de un nodo a otro siguiendo las aristas en su dirección. **Un grafo dirigido es débilmente conexo si se vuelve conexo al ignorar la dirección de las aristas**.
+
+La conexidad es una propiedad importante en el análisis de grafos, ya que puede afectar la solución de problemas como la búsqueda del [[#Camino más corto]], o la identificación de puntos críticos en una red.
+
 # Implementaciones
+
+En general, las implementaciones de grafos buscan representar de manera eficiente la estructura y las conexiones entre los nodos. Existen diferentes enfoques para implementar grafos, y cada uno tiene sus ventajas y desventajas en términos de eficiencia de espacio, rendimiento y facilidad de uso. Algunas implementaciones son más adecuadas para ciertos tipos de grafos o problemas específicos.
+
+Al elegir una implementación, es importante considerar factores como la **densidad del grafo**, las **operaciones que se realizarán con más frecuencia** y las restricciones de memoria y tiempo de ejecución. También es fundamental tener en cuenta si el grafo es dirigido o no dirigido, ponderado o no ponderado, y si presenta características especiales como ciclos, conexidad o jerarquía.
 
 ## Matriz de adyacencia
 
