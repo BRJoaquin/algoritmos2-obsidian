@@ -35,7 +35,7 @@ Es una realidad, hoy día es posible el ahorro de tiempo y no quiero tener créd
 
 Me llamo Joaquin Vigna, y soy un apasionado de la tecnología y el software. Me encanta crear soluciones innovadoras y efectivas para problemas complejos, y siempre estoy buscando nuevas formas de mejorar y aprender.
 
-Como fundador y CTO de una empresa de software([BrokenRubik](https://brokenrubik.co/)), me enorgullece liderar un equipo talentoso y motivado en el desarrollo de productos innovadores. También soy un amante de Linux y del open-source, y he contribuido a varios proyectos en la comunidad.
+Como co-fundador y CTO de una empresa de software([BrokenRubik](https://brokenrubik.co/)), me enorgullece liderar un equipo talentoso y motivado en el desarrollo de productos innovadores. También soy un amante de Linux y del open-source, y he contribuido a varios proyectos en la comunidad.
 
 Además de mi trabajo en la empresa, también disfruto enseñar y compartir mi conocimiento con otros. He enseñado en aulas universitarias, y encuentro mucha satisfacción en ver a mis estudiantes adquirir nuevas habilidades y conocimientos.
 
