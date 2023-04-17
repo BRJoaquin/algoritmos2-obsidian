@@ -128,7 +128,7 @@ Para grafos ponderados, la lista de adyacencia puede almacenar no solo los nodos
 
 Las listas de adyacencia son una representación eficiente para realizar operaciones como recorrer todos los vecinos de un nodo, ya que solo es necesario iterar sobre los elementos de la lista de adyacencia de ese nodo en particular. Sin embargo, acceder a la información de conexión entre dos nodos específicos puede ser menos eficiente en comparación con la matriz de adyacencia, ya que es necesario buscar en la lista de adyacencia en lugar de acceder a una posición específica en la matriz.
 
-
+![[Pasted image 20230417181221.png]]
 
 # Recorridas
 
