@@ -52,7 +52,17 @@ En un grafo ponderado, el peso de una arista puede influir en la solución de di
 
 Por ejemplo, en el caso de una red de transporte, las aristas podrían estar ponderadas por la distancia entre dos ciudades o por el tiempo de viaje requerido. Entonces, al buscar el camino más corto entre dos ciudades, un algoritmo de grafo ponderado, como el algoritmo de [[Dijkstra]] o el algoritmo de [[Bellman-Ford]], tendría en cuenta estos pesos para determinar la ruta óptima.
 
-Es importante mencionar que no todos los grafos son ponderados. En un grafo no ponderado, todas las aristas tienen el mismo peso implícito o se asume que no hay diferencias significativas entre las conexiones. En estos casos, los algoritmos de grafos se enfocan en las relaciones topológicas entre los nodos y no en los atributos de las aristas.
+Es importante mencionar que no todos los grafos son ponderados. En un grafo no ponderado, todas las aristas tienen el mismo peso implícito o se asume que no hay diferencias significativas entre las conexiones. En estos casos, los algoritmos de grafos se enfocan en las relaciones topológicas entre los nodos y no en los atributos de las aristas, por ejemplo [[Orden topologico]] o [[#Recorridas]] como [[BFS]] y [[DFS]].
+
+![[Pasted image 20230417173841.png]]
+
+> Cabe destacar que la ponderación y la dirección son propiedades **independientes**, es decir pueden existir las 4 combinaciones. 
+
+## Ciclicidad
+
+La ciclicidad en grafos se refiere a la presencia de ciclos en ellos. Un ciclo es un camino que comienza y termina en el mismo nodo, recorriendo al menos una arista y sin repetir aristas ni nodos intermedios. Los grafos pueden ser clasificados como cíclicos o acíclicos, según si contienen ciclos o no.
+
+Grafo cíclico: Un grafo que contiene al menos un ciclo. Grafo acíclico: Un grafo que no contiene ciclos.
 
 # Implementaciones
 
