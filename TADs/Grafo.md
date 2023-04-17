@@ -98,9 +98,25 @@ La conexidad es una propiedad importante en el análisis de grafos, ya que puede
 
 En general, las implementaciones de grafos buscan representar de manera eficiente la estructura y las conexiones entre los nodos. Existen diferentes enfoques para implementar grafos, y cada uno tiene sus ventajas y desventajas en términos de eficiencia de espacio, rendimiento y facilidad de uso. Algunas implementaciones son más adecuadas para ciertos tipos de grafos o problemas específicos.
 
-Al elegir una implementación, es importante considerar factores como la **densidad del grafo**, las **operaciones que se realizarán con más frecuencia** y las restricciones de memoria y tiempo de ejecución. También es fundamental tener en cuenta si el grafo es dirigido o no dirigido, ponderado o no ponderado, y si presenta características especiales como ciclos, conexidad o jerarquía.
+Al elegir una implementación, es importante considerar factores como la **densidad del grafo**, las **operaciones que se realizarán con más frecuencia** y las restricciones de memoria y tiempo de ejecución. También es fundamental tener en cuenta si el grafo es dirigido o no dirigido, ponderado o no ponderado.
+
+Las opciones de implementación de grafos más comunes son:
+1. Matriz de adyacencia
+2. Lista de adyacencia
+
+![[Pasted image 20230417180414.png]]
 
 ## Matriz de adyacencia
+
+La matriz de adyacencia es una forma común de representar grafos en la que se utiliza una matriz cuadrada para indicar las conexiones (aristas) entre los nodos. La matriz tiene un tamaño de |V| x |V|, donde |V| es el número de nodos en el grafo. Cada entrada (i, j) en la matriz representa la relación entre el nodo i y el nodo j.
+
+En un grafo no dirigido, la matriz de adyacencia es simétrica, lo que significa que si hay una arista entre el nodo i y el nodo j, entonces la matriz contendrá un valor no nulo (generalmente 1) tanto en la posición (i, j) como en la posición (j, i). En un grafo dirigido, la simetría no se garantiza, ya que la conexión entre los nodos puede ser unidireccional.
+
+En el caso de grafos ponderados, la matriz de adyacencia almacena los pesos de las aristas en lugar de simplemente indicar la presencia o ausencia de una arista. En este caso, las entradas (i, j) de la matriz contienen el peso de la arista que conecta el nodo i con el nodo j. Si no hay conexión entre los nodos, se utiliza un valor especial, como 0, infinito o un número negativo grande, según el contexto.
+
+La matriz de adyacencia es especialmente útil en grafos densos, donde la mayoría de los pares de nodos están conectados, ya que permite un acceso rápido a la información de conexión entre nodos específicos. Sin embargo, en grafos dispersos, esta representación puede ser ineficiente en términos de espacio, ya que la mayoría de las entradas de la matriz estarán vacías (sin aristas) y se desperdicia memoria almacenando información innecesaria.
+
+
 
 
 ## Lista de adyacencia
