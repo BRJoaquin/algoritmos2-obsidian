@@ -69,6 +69,13 @@ Grafo acíclico: Un grafo que no contiene ciclos.
 
 ## Densidad
 
+La densidad es una medida que describe **qué tan conectado está un grafo**. Se calcula como la proporción entre el número de conexiones (aristas) que realmente existen en el grafo y el número máximo de conexiones posibles entre todos los nodos.
+
+La densidad de un grafo varía entre 0 y 1. Un valor de densidad cercano a 0 significa que el grafo es muy **disperso** y tiene pocas conexiones entre sus nodos. Por otro lado, un valor cercano a 1 indica que el grafo es muy **denso** y tiene muchas conexiones entre sus nodos, acercándose al máximo posible.
+
+![[Pasted image 20230417175153.png]]
+
+
 
 # Implementaciones
 
