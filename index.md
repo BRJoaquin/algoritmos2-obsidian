@@ -2,7 +2,7 @@
 
 En mis primeros años estudiando Ingeniería en Sistemas había un sistema muy peculiar fuera de la facultad. Los alumnos dejaban sus apuntes una vez terminada una materia para que otros pudieran tener acceso a buenos resúmenes.
 
-Siempre me sorprendió la generosidad de conocimiento que existe en la informática en general, y soy partidario a seguir esa tradición ya que nos da la humilde lección: ``existe un otro que sabe mas``. 
+Siempre me sorprendió la generosidad de conocimiento que existe en la informática en general, y soy partidario a seguir esa tradición ya que nos da la humilde lección: ``existe un otro que sabe más``. 
 
 Como docente siempre trato de pensar una nueva forma de hacer llegar el conocimiento lo mas eficaz posible. Este resumen es uno de ellos, donde trato de dar una herramienta mas al estudio de la materia. 
 
