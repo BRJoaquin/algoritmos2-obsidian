@@ -75,7 +75,16 @@ La densidad de un grafo varía entre 0 y 1. Un valor de densidad cercano a 0 sig
 
 ![[Pasted image 20230417175153.png]]
 
+> [!warning]
+> Esta clasificación es muy importante para nosotros ya que puede determinar como implementamos los grafos
 
+La relación entre la densidad de un grafo y las dos implementaciones ([[#Lista de adyacencia]] y [[#Matriz de adyacencia]]) radica principalmente en la **eficiencia de espacio y en el rendimiento de las operaciones realizadas en el grafo**.
+
+Para grafos **dispersos** (baja densidad), la **lista de adyacencia** suele ser más eficiente en términos de espacio y rendimiento, ya que almacena **solo las aristas existentes**, lo que resulta en un menor consumo de memoria. **Además, las operaciones como recorrer los vecinos de un nodo son más rápidas en una lista de adyacencia** ($O(V)$ como peor caso).
+
+Por otro lado, para grafos **densos** (alta densidad), la **matriz de adyacencia** puede ser una opción más adecuada, ya que la matriz estará mayormente llena de valores distintos de cero (o del valor que se haya elegido para la ausencia de arista). Aunque consume más memoria que la lista de adyacencia, permite acceder rápidamente a la información de adyacencia entre dos nodos específicos.
+
+## Conexidad
 
 # Implementaciones
 
