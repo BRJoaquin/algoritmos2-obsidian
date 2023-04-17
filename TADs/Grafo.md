@@ -116,10 +116,19 @@ En el caso de grafos ponderados, la matriz de adyacencia almacena los pesos de l
 
 La matriz de adyacencia es especialmente útil en grafos densos, donde la mayoría de los pares de nodos están conectados, ya que permite un acceso rápido a la información de conexión entre nodos específicos. Sin embargo, en grafos dispersos, esta representación puede ser ineficiente en términos de espacio, ya que la mayoría de las entradas de la matriz estarán vacías (sin aristas) y se desperdicia memoria almacenando información innecesaria.
 
-
-
+![[Pasted image 20230417181130.png]]
 
 ## Lista de adyacencia
+
+La lista de adyacencia es una forma común de representar grafos, en la que cada nodo tiene asociada una lista de los nodos adyacentes, es decir, aquellos con los que comparte una arista. Esta representación es especialmente útil en grafos dispersos, donde la mayoría de los pares de nodos no están conectados, ya que consume menos memoria que la matriz de adyacencia.
+
+En una lista de adyacencia, se mantiene una lista principal que contiene tantos elementos como nodos haya en el grafo. Cada elemento de esta lista principal es, a su vez, una lista que contiene los nodos adyacentes al nodo correspondiente. En el caso de grafos no dirigidos, si el nodo i está en la lista de adyacencia del nodo j, entonces el nodo j también estará en la lista de adyacencia del nodo i. Para grafos dirigidos, la lista de adyacencia solo contiene información sobre las aristas dirigidas desde un nodo hacia otros nodos.
+
+Para grafos ponderados, la lista de adyacencia puede almacenar no solo los nodos adyacentes, sino también los pesos asociados a las aristas. Esto se logra almacenando pares de valores en la lista de adyacencia, donde el primer elemento del par es el nodo adyacente y el segundo elemento es el peso de la arista.
+
+Las listas de adyacencia son una representación eficiente para realizar operaciones como recorrer todos los vecinos de un nodo, ya que solo es necesario iterar sobre los elementos de la lista de adyacencia de ese nodo en particular. Sin embargo, acceder a la información de conexión entre dos nodos específicos puede ser menos eficiente en comparación con la matriz de adyacencia, ya que es necesario buscar en la lista de adyacencia en lugar de acceder a una posición específica en la matriz.
+
+
 
 # Recorridas
 
