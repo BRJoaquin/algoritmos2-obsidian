@@ -62,7 +62,13 @@ Es importante mencionar que no todos los grafos son ponderados. En un grafo no p
 
 La ciclicidad en grafos se refiere a la presencia de ciclos en ellos. Un ciclo es un camino que comienza y termina en el mismo nodo, recorriendo al menos una arista y sin repetir aristas ni nodos intermedios. Los grafos pueden ser clasificados como cíclicos o acíclicos, según si contienen ciclos o no.
 
-Grafo cíclico: Un grafo que contiene al menos un ciclo. Grafo acíclico: Un grafo que no contiene ciclos.
+![[Pasted image 20230417174235.png]]
+
+Grafo cíclico: Un grafo que contiene al menos un ciclo. 
+Grafo acíclico: Un grafo que no contiene ciclos.
+
+## Densidad
+
 
 # Implementaciones
 
