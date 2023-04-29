@@ -15,6 +15,7 @@ El algoritmo BFS sigue estos pasos generales:
 
 4.  Finalizar: Cuando la cola esté vacía, el algoritmo BFS habrá visitado todos los vértices alcanzables desde el vértice origen.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/x-VTfcmrLEQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 El algoritmo BFS garantiza que los vértices se visiten en orden de distancia desde el vértice origen. Por lo tanto, si existe un camino más corto entre el vértice origen y cualquier otro vértice del grafo, BFS lo encontrará. Además, BFS es un algoritmo eficiente en términos de tiempo y espacio, con una complejidad de tiempo $O(|V|+|E|)$ con listas de adyacencia ([[Grafo#Lista de adyacencia]], donde $|V|$ es el número de vértices en el grafo y $|E|$ es el número de aristas.
 
