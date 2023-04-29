@@ -71,3 +71,36 @@ El algoritmo de Búsqueda en Anchura (Breadth-First Search, BFS) es un algoritmo
 
 ## Ejemplo de uso: camino más corto
 
+```cpp
+voide shortest_path(const Graph& graph, int start) {
+	// |V|
+    int num_vertices = graph.size();
+    // guardamos el camino
+    vector<int> predecessors(num_vertices, -1);
+    // guardamos el costo de llegar a cada vertice
+    vector<int> cost(num_vertices, 0);
+    vector<bool> enqueued(num_vertices, false);
+
+    queue<int> q;
+    q.push(start);
+    enqueued[start] = true;
+
+    while (!q.empty()) {
+        int current_vertex = q.front();
+        int current_cost = cost[current_vertex]
+        q.pop();
+
+		// recorrer los adyacentes
+        for (int neighbor : graph[current_vertex]) {
+            if (!enqueued[neighbor]) {
+                q.push(neighbor);
+                enqueued[neighbor] = true;
+                predecessors[neighbor] = current_vertex;
+                cost[neighbor] = current_cost + 1;
+            }
+        }
+    }
+
+	// uso de predecessors y 
+}
+```
