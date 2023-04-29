@@ -150,3 +150,22 @@ Hay varios algoritmos conocidos para encontrar el árbol de cubrimiento mínimo 
 
 # Camino más corto
 
+
+
+# Cuál algoritmo usar?
+
+1.  ¿El grafo es **ponderado**?
+    -   No (no ponderado): Utilizar [[BFS]].
+    -   Sí (ponderado): Continuar al paso 2.
+2.  ¿El grafo tiene aristas con **pesos negativos**?
+    -   No (sin pesos negativos): Continuar al paso 3.
+    -   Sí (con pesos negativos): Continuar al paso 4.
+3.  ¿Qué tipo de problema se quiere resolver?
+    -   Camino más corto desde un único vértice de origen: Utilizar [[Dijkstra]].
+    -   Todos los pares de caminos más cortos: Utilizar [[Floyd]] para grafos densos, V veces Dijkstra para grafos dispersos.
+4.  ¿El grafo tiene **ciclos negativos**?
+    -   No (sin ciclos negativos): Continuar al paso 5.
+    -   Sí (con ciclos negativos): No se puede resolver el problema del camino más corto con estos algoritmos, ya que la presencia de ciclos negativos hace que las soluciones no estén bien definidas.
+5.  ¿Qué tipo de problema se quiere resolver?
+    -   Camino más corto desde un único vértice de origen: Utilizar Bellman-Ford.
+    -   Todos los pares de caminos más cortos: Utilizar Floyd-Warshall.
