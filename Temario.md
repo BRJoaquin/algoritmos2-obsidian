@@ -8,7 +8,9 @@
 	- [[ABB]] (arboles binarios de búsqueda)
 2) [[AVL]]
 3) [[Tabla de hash]]
-4) Grafo
+4) [[Cola de prioridad]]
+5) [[Heap]]
+6) Grafo
 	- [[Grafo]] (TAD)
 	-  [[Grafo#Recorridas]]
 		- [[BFS]]
@@ -21,7 +23,7 @@
 	- [[Grafo#Arbol de cubrimiento minimo]]
 		- [[Prim]]
 		- [[Kruskal]]
-5) [[Tacticas]]
+7) [[Tácticas]]
 	- [[Dividir y conquistar]]
 	- [[Greedy]]
 	- [[Programacion dinamica]]
