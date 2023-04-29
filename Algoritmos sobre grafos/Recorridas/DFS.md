@@ -106,3 +106,33 @@ bool is_bipartite(const Graph& graph) {
 
 Para determinar la cantidad de componentes conexas en un grafo no dirigido utilizando DFS, podemos iniciar un recorrido DFS desde cada vértice no visitado y contar cuántas veces se realizó el recorrido.
 
+```cpp
+// Función auxiliar para el algoritmo DFS recursivo
+void dfs_recursive(const Graph& graph, int current_vertex, vector<bool>& visited) {
+    // Marcar el vértice actual como visitado
+    visited[current_vertex] = true;
+
+    // Explorar los vértices adyacentes al vértice actual
+    for (int neighbor : graph[current_vertex]) {
+        if (!visited[neighbor]) {
+            dfs_recursive(graph, neighbor, visited);
+        }
+    }
+}
+
+// Función que utiliza DFS para contar el número de componentes conexas en un grafo no dirigido
+int count_connected_components(const Graph& graph) {
+    int num_vertices = graph.size();
+    vector<bool> visited(num_vertices, false);
+    int connected_components_count = 0;
+
+    for (int i = 0; i < num_vertices; ++i) {
+        if (!visited[i]) {
+            dfs_recursive(graph, i, visited);
+            ++connected_components_count;
+        }
+    }
+
+    return connected_components_count;
+}
+```
