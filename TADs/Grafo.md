@@ -150,16 +150,18 @@ Hay varios algoritmos conocidos para encontrar el árbol de cubrimiento mínimo 
 
 # Camino más corto
 
-El problema del camino más corto en un grafo se refiere a encontrar el camino con la distancia mínima entre dos vértices en un grafo ponderado. La distancia entre dos vértices es la suma de los pesos de las aristas que componen el camino. Este problema tiene muchas aplicaciones en la vida real, como la planificación de rutas, redes de comunicación y navegación.
+El problema del camino más corto en un grafo se refiere a encontrar el camino con la distancia mínima entre dos o más vértices en un grafo ponderado. La distancia entre dos vértices es la suma de los pesos de las aristas que componen el camino. Este problema tiene muchas aplicaciones en la vida real, como la planificación de rutas, redes de comunicación y navegación.
 
 Hay varios algoritmos conocidos para resolver el problema del camino más corto en diferentes tipos de grafos:
 
-1.  Algoritmo de Dijkstra: Este algoritmo resuelve el problema del camino más corto desde un vértice de origen único en un grafo dirigido o no dirigido con pesos de aristas no negativos. El algoritmo de Dijkstra funciona de manera iterativa, seleccionando en cada paso el vértice con la distancia más corta conocida desde el origen que aún no ha sido visitado y actualizando las distancias a sus vecinos. El algoritmo termina cuando todos los vértices han sido visitados o cuando se ha encontrado el camino más corto al vértice de destino.
-    
+1.  Algoritmo de [[Dijkstra]]: Este algoritmo resuelve el problema del camino más corto desde un vértice de origen único en un grafo dirigido o no dirigido con pesos **de aristas no negativos**. El algoritmo de Dijkstra funciona de manera iterativa, seleccionando en cada paso el vértice con la distancia más corta conocida desde el origen que aún no ha sido visitado y actualizando las distancias a sus vecinos. El algoritmo termina cuando todos los vértices han sido visitados o cuando se ha encontrado el camino más corto al vértice de destino.
+
 2.  Algoritmo de Bellman-Ford: Este algoritmo resuelve el problema del camino más corto desde un vértice de origen único en un grafo dirigido o no dirigido que puede contener pesos de aristas negativos, pero no ciclos negativos (ciclos en los que la suma de los pesos de las aristas es negativa). El algoritmo de Bellman-Ford funciona relajando todas las aristas del grafo repetidamente, actualizando las distancias conocidas a cada vértice. Después de |V|-1 iteraciones (donde |V| es el número de vértices), el algoritmo garantiza que se haya encontrado el camino más corto a todos los vértices.
-    
+
 3.  Algoritmo de Floyd-Warshall: Este algoritmo resuelve el problema de todos los pares de caminos más cortos en un grafo dirigido o no dirigido con pesos de aristas positivos o negativos, siempre que no haya ciclos negativos. El algoritmo de Floyd-Warshall es un algoritmo de programación dinámica que funciona iterativamente actualizando las distancias más cortas entre todos los pares de vértices utilizando los vértices intermedios. El algoritmo termina cuando se han considerado todos los vértices como vértices intermedios y se han calculado las distancias más cortas entre todos los pares de vértices.
-    
+
+> En la caso de no ser dirigido podr[]
+
 
 La elección del algoritmo adecuado para resolver el problema del camino más corto en un grafo específico depende de las características del grafo (dirigido o no dirigido, con pesos de aristas negativos o no) y de las necesidades de la aplicación (camino más corto desde un solo vértice de origen o entre todos los pares de vértices).
 
