@@ -2,7 +2,6 @@
 tag: TAD
 ---
 
-  
 Una cola de prioridad es un tipo abstracto de datos (TAD) que se utiliza para gestionar un conjunto de elementos con ciertas prioridades asociadas. En una cola de prioridad, los elementos se insertan en cualquier orden, pero se eliminan según su nivel de prioridad. El elemento con la prioridad más alta es el primero en ser eliminado. Si varios elementos tienen la misma prioridad, se atienden según el orden en que fueron agregados a la cola.
 
 Las colas de prioridad son útiles en diversas aplicaciones, como la planificación de procesos en sistemas operativos, algoritmos de ruta más corta en gráficos, compresión de datos y simulaciones de eventos discretos, entre otros.
@@ -88,5 +87,12 @@ public:
 };
 
 #endif // EXTENDED_PRIORITY_QUEUE_H
-
 ```
+
+## Implementación con heap
+
+Cuando se implementa una **cola de prioridad extendida** utilizando únicamente un [[Heap]] (montículo), algunos de los métodos adicionales, como `changePriority`, `deleteElement` y `exists`, pueden tener una complejidad de tiempo peor que con otras estructuras de datos.
+
+**En un heap, encontrar un elemento específico tiene una complejidad de tiempo $O(n)$ en el peor caso, ya que puede ser necesario recorrer todo el heap.** Como resultado, las operaciones `changePriority` y `deleteElement` también tendrán una complejidad de tiempo $O(n)$ en el peor caso, dado que primero se debe encontrar el elemento antes de realizar las operaciones de cambio de prioridad o eliminación.
+
+Una posible solución para mejorar el rendimiento de estas operaciones es utilizar una estructura de datos auxiliar junto con el heap, como una [[Tabla de hash]]. **La tabla de hash puede almacenar la ubicación de los elementos en el heap,** lo que permite encontrar y acceder a un elemento específico en tiempo constante promedio $O(1)$ (caso promedio). Al combinar el heap y la tabla de hash, las operaciones `changePriority`, `deleteElement` y `exists` pueden volverse más eficientes.
