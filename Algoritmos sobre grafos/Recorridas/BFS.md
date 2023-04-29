@@ -50,3 +50,7 @@ void bfs(const Graph& graph, int origin) {
     }
 }
 ```
+
+# Visualización
+
+https://www.cs.usfca.edu/~galles/visualization/BFS.html

@@ -35,3 +35,8 @@ void dfs(const Graph& graph, int origin) {
     dfs_recursive(graph, origin, visited);
 }
 ```
+
+# Visualización
+
+https://www.cs.usfca.edu/~galles/visualization/DFS.html
+
