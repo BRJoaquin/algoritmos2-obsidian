@@ -140,6 +140,13 @@ Ambos algoritmos, [[BFS]] y [[DFS]], pueden ser implementados de manera iterativ
 
 # Árbol de cubrimiento mínimo
 
+El árbol de cubrimiento mínimo (Minimum Spanning Tree, MST) es un subgrafo de un grafo no dirigido y conectado que contiene todos los vértices del grafo original y es un árbol. Además, la suma de los pesos de las aristas en el árbol de cubrimiento mínimo es mínima entre todos los posibles árboles de cubrimiento del grafo.
+
+![[Pasted image 20230429114942.png]]
+
+En otras palabras, el árbol de cubrimiento mínimo es una forma de conectar todos los vértices del grafo con un conjunto mínimo de aristas y con el menor costo posible. Este concepto es especialmente útil en problemas de redes y optimización, como el diseño de redes de comunicación o el problema del vendedor ambulante.
+
+Hay varios algoritmos conocidos para encontrar el árbol de cubrimiento mínimo de un grafo. Los más comunes son el algoritmo de [[Kruskal]] y el algoritmo de [[Prim]].
 
 # Camino más corto
 
