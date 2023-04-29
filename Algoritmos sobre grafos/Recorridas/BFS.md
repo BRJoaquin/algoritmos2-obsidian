@@ -16,8 +16,41 @@ El algoritmo BFS sigue estos pasos generales:
 4.  Finalizar: Cuando la cola esté vacía, el algoritmo BFS habrá visitado todos los vértices alcanzables desde el vértice origen.
 
 
-El algoritmo BFS garantiza que los vértices se visiten en orden de distancia desde el vértice origen. Por lo tanto, si existe un camino más corto entre el vértice origen y cualquier otro vértice del grafo, BFS lo encontrará. Además, BFS es un algoritmo eficiente en términos de tiempo y espacio, con una complejidad de tiempo $O(|V|+|E|)$, donde |V| es el número de vértices en el grafo y |E| es el número de aristas.
+El algoritmo BFS garantiza que los vértices se visiten en orden de distancia desde el vértice origen. Por lo tanto, si existe un camino más corto entre el vértice origen y cualquier otro vértice del grafo, BFS lo encontrará. Además, BFS es un algoritmo eficiente en términos de tiempo y espacio, con una complejidad de tiempo $O(|V|+|E|)$ con listas de adyacencia ([[Grafo#Lista de adyacencia]], donde $|V|$ es el número de vértices en el grafo y $|E|$ es el número de aristas.
 
-Es importante tener en cuenta que el algoritmo BFS se basa en la exploración sistemática de los vértices utilizando una cola. Esto hace que sea un algoritmo intrínsecamente no recursivo, aunque se pueden implementar variantes recursivas del algoritmo BFS utilizando una cola explícita y una función auxiliar de recurrencia.
+El algoritmo BFS puede ser adaptado fácilmente para abordar problemas específicos, como determinar si un grafo es bipartito, encontrar ciclos en un grafo o calcular la distancia entre dos vértices.
 
-El algoritmo BFS puede ser adaptado fácilmente para abordar problemas específicos, como determinar si un grafo es bipartito, encontrar ciclos en un grafo o calcular la distancia entre dos vértices. Además, el algoritmo BFS puede ser utilizado en combinación con otras técnicas de optimización, como la poda de ramas y límites, para resolver problemas de optimización combinatoria más complejos.
+```cpp
+#include <iostream>
+#include <vector>
+#include <queue>
+
+using namespace std;
+
+// Implementación de BFS en C++
+void bfs(const Graph& graph, int origin) {
+    int num_vertices = graph.size();
+    vector<bool> enqueued(num_vertices, false);
+    queue<int> q;
+
+    // Marcar el vértice de origen como encolado y encolarlo
+    enqueued[origin] = true;
+    q.push(origin);
+
+    while (!q.empty()) {
+        int current_vertex = q.front();
+        q.pop();
+
+        // Procesar el vértice actual (por ejemplo, imprimirlo)
+        cout << "Vértice visitado: " << current_vertex << endl;
+
+        // Explorar los vértices adyacentes al vértice actual
+        for (int neighbor : graph[current_vertex]) {
+            if (!enqueued[neighbor]) {
+                enqueued[neighbor] = true;
+                q.push(neighbor);
+            }
+        }
+    }
+}
+```
