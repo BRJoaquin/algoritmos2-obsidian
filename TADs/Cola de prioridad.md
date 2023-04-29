@@ -2,7 +2,7 @@
 tag: TAD
 ---
 
-Una cola de prioridad es un tipo abstracto de datos (TAD) que se utiliza para gestionar un conjunto de elementos con ciertas prioridades asociadas. En una cola de prioridad, los elementos se insertan en cualquier orden, pero se eliminan según su nivel de prioridad. El elemento con la prioridad más alta es el primero en ser eliminado. Si varios elementos tienen la misma prioridad, se atienden según el orden en que fueron agregados a la cola.
+Una cola de prioridad es un [[Tipo Abstracto de Dato (TAD)]] que se utiliza para gestionar un conjunto de elementos con ciertas prioridades asociadas. En una cola de prioridad, los elementos se insertan en cualquier orden, pero se eliminan según su nivel de prioridad. El elemento con la prioridad más alta es el primero en ser eliminado. Si varios elementos tienen la misma prioridad, se atienden según el orden en que fueron agregados a la cola.
 
 Las colas de prioridad son útiles en diversas aplicaciones, como la planificación de procesos en sistemas operativos, algoritmos de ruta más corta en gráficos, compresión de datos y simulaciones de eventos discretos, entre otros.
 
@@ -19,7 +19,6 @@ Existen varias formas de implementar una cola de prioridad, algunas de las más 
 ```cpp
 #ifndef PRIORITY_QUEUE_H
 #define PRIORITY_QUEUE_H
-
 
 template<typename T>
 class PriorityQueue {
@@ -75,7 +74,7 @@ public:
 
     // Pre-condición: el elemento debe estar en la cola de prioridad
     // Post-condición: cambia la prioridad del elemento en la cola de prioridad
-    virtual void changePriority(const T& value, const T& newPriority) = 0;
+    virtual void changePriority(const T& value, int newPriority) = 0;
 
     // Pre-condición: el elemento debe estar en la cola de prioridad
     // Post-condición: elimina el elemento específico de la cola de prioridad

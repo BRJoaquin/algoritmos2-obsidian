@@ -132,6 +132,9 @@ Las listas de adyacencia son una representación eficiente para realizar operaci
 
 # Recorridas
 
+El recorrido de grafos es una técnica fundamental en la teoría de grafos y en la ciencia de la computación en general. Se utilizan diferentes algoritmos para visitar todos los vértices de un grafo, comenzando desde un vértice origen y siguiendo un criterio específico de exploración. Los dos algoritmos más comunes para recorrer grafos son la Búsqueda en Anchura (Breadth-First Search, [[BFS]]) y la Búsqueda en Profundidad (Depth-First Search, [[DFS]]).
+
+Ambos algoritmos, [[BFS]] y [[DFS]], pueden ser implementados de manera iterativa o recursiva, y suelen utilizarse en combinación con estructuras de datos como [[#Lista de adyacencia]], [[#Matriz de adyacencia]] para representar los grafos. Además, los algoritmos de recorrido de grafos pueden modificarse fácilmente para abordar problemas específicos y proporcionar información adicional sobre la estructura y propiedades de un grafo.
 
 # Árbol de cubrimiento mínimo
 
