@@ -57,3 +57,36 @@ public:
 
 # Cola de prioridad extendida
 
+Una cola de prioridad extendida es una variante de la cola de prioridad básica que incluye dos métodos adicionales para aumentar su funcionalidad: `changePriority`,  `delete` y  `exists`. Estos métodos permiten modificar la prioridad de un elemento en la cola y eliminar un elemento específico, respectivamente.
+
+```cpp
+#ifndef EXTENDED_PRIORITY_QUEUE_H
+#define EXTENDED_PRIORITY_QUEUE_H
+
+#include "PriorityQueue.h"
+
+template<typename T>
+class ExtendedPriorityQueue : public PriorityQueue<T> {
+public:
+    // Constructor por defecto
+    ExtendedPriorityQueue() {}
+
+    // Destructor virtual
+    virtual ~ExtendedPriorityQueue() {}
+
+    // Pre-condición: el elemento debe estar en la cola de prioridad
+    // Post-condición: cambia la prioridad del elemento en la cola de prioridad
+    virtual void changePriority(const T& value, const T& newPriority) = 0;
+
+    // Pre-condición: el elemento debe estar en la cola de prioridad
+    // Post-condición: elimina el elemento específico de la cola de prioridad
+    virtual void deleteElement(const T& value) = 0;
+
+	// Pre-condición: ninguna 
+	// Post-condición: devuelve verdadero si el elemento existe en la cola de prioridad, falso en caso contrario 
+	virtual bool exists(const T& value) const = 0;
+};
+
+#endif // EXTENDED_PRIORITY_QUEUE_H
+
+```
