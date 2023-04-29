@@ -40,3 +40,60 @@ void dfs(const Graph& graph, int origin) {
 
 https://www.cs.usfca.edu/~galles/visualization/DFS.html
 
+# Usos
+
+El algoritmo de Búsqueda en Profundidad (Depth-First Search, DFS) es una técnica de recorrido de grafos que se utiliza en una amplia variedad de aplicaciones en ciencias de la computación y algoritmos. Algunas de las aplicaciones y usos más comunes del algoritmo DFS incluyen:
+
+1.  Detectar ciclos en un grafo: DFS puede ser utilizado para detectar la presencia de ciclos en un grafo, lo cual es útil para determinar si un grafo es un árbol (grafo acíclico y conexo) o para verificar si un grafo dirigido es un DAG (grafo acíclico dirigido).
+
+2.  Encontrar componentes conexos: DFS puede ser empleado para identificar los componentes conexos de un grafo no dirigido. Al iniciar el algoritmo en cada vértice no visitado, se pueden explorar todos los vértices de un componente conexo antes de pasar al siguiente componente.
+
+3.  Comprobar si un grafo es bipartito: Mediante una adaptación del algoritmo DFS, se puede determinar si un grafo es bipartito (es decir, si se puede dividir en dos conjuntos disjuntos de vértices de modo que todas las aristas conecten vértices de un conjunto con vértices del otro).
+
+4.  Encontrar caminos entre dos vértices: DFS puede ser utilizado para encontrar un camino entre dos vértices en un grafo, aunque no garantiza encontrar el camino más corto como lo hace BFS.
+
+5.  Topological sorting: En grafos dirigidos acíclicos (DAG), DFS puede ser adaptado para producir una ordenación topológica de los vértices, que es un orden lineal de los vértices de manera que para cada arista (u, v), el vértice u viene antes que el vértice v en el ordenamiento.
+
+## Ejemplo de uso: bipartita
+
+Para determinar si un grafo es [bipartito](https://es.wikipedia.org/wiki/Grafo_bipartito) utilizando DFS, se pueden asignar colores a los vértices durante el recorrido. Si en algún momento un vértice ya coloreado es visitado con el mismo color que su vecino, entonces el grafo no es bipartito.
+
+```cpp
+// Función auxiliar para el algoritmo DFS que verifica si un grafo es bipartito
+bool is_bipartite_dfs(const Graph& graph, int current_vertex, vector<int>& colors, int current_color) {
+    // Asignar el color actual al vértice actual
+    colors[current_vertex] = current_color;
+
+    // Explorar los vértices adyacentes al vértice actual
+    for (int neighbor : graph[current_vertex]) {
+        if (colors[neighbor] == -1) {
+            // Si el vecino no está coloreado, asignarle el color opuesto y continuar el recorrido
+            if (!is_bipartite_dfs(graph, neighbor, colors, 1 - current_color)) {
+                return false;
+            }
+        } else if (colors[neighbor] == current_color) {
+            // Si el vecino ya está coloreado y tiene el mismo color que el vértice actual, el grafo no es bipartito
+            return false;
+        }
+    }
+
+    // Si todos los vecinos tienen colores opuestos al vértice actual, el grafo es bipartito hasta ahora
+    return true;
+}
+
+// Función que utiliza DFS para verificar si un grafo es bipartito
+bool is_bipartite(const Graph& graph) {
+    int num_vertices = graph.size();
+    vector<int> colors(num_vertices, -1);
+
+    for (int i = 0; i < num_vertices; ++i) {
+        if (colors[i] == -1) {
+            if (!is_bipartite_dfs(graph, i, colors, 0)) {
+                return false;
+            }
+        }
+    }
+
+    return true;
+}
+```

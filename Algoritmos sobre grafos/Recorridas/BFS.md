@@ -21,6 +21,9 @@ El algoritmo BFS garantiza que los vértices se visiten en orden de distancia de
 
 El algoritmo BFS puede ser adaptado fácilmente para abordar problemas específicos, como determinar si un grafo es bipartito, encontrar ciclos en un grafo o calcular la distancia entre dos vértices.
 
+# Usos
+
+
 # Implementación
 
 ```cpp
