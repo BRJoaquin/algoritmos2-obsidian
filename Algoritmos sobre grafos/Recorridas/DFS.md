@@ -58,6 +58,8 @@ El algoritmo de Búsqueda en Profundidad (Depth-First Search, DFS) es una técni
 
 Para determinar si un grafo es [bipartito](https://es.wikipedia.org/wiki/Grafo_bipartito) utilizando DFS, se pueden asignar colores a los vértices durante el recorrido. Si en algún momento un vértice ya coloreado es visitado con el mismo color que su vecino, entonces el grafo no es bipartito.
 
+![[Pasted image 20230429111711.png]]
+
 ```cpp
 // Función auxiliar para el algoritmo DFS que verifica si un grafo es bipartito
 bool is_bipartite_dfs(const Graph& graph, int current_vertex, vector<int>& colors, int current_color) {
@@ -97,3 +99,10 @@ bool is_bipartite(const Graph& graph) {
     return true;
 }
 ```
+
+## Ejemplo de uso: cantidad de componentes conexas
+
+![[Pasted image 20230429111600.png]]
+
+Para determinar la cantidad de componentes conexas en un grafo no dirigido utilizando DFS, podemos iniciar un recorrido DFS desde cada vértice no visitado y contar cuántas veces se realizó el recorrido.
+
